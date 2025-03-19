@@ -8,7 +8,7 @@ export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white fixed w-full top-0 z-50 py-5">
+        <header className="bg-white fixed w-full top-0 z-50 pt-5 xl:py-5">
             <div className="px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <h1 className='text-red text-[1.625rem] font-semibold sm:text-[2.5rem] font-dancing'>Les Phénâtres de l'Artois</h1>
