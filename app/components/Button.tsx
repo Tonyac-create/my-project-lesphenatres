@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ href, children, className, variant = 'primary' }) => {
-  const baseClasses = 'px-4 py-2 rounded-md transition-colors duration-300 font-semibold ';
+  const baseClasses = 'px-4 py-2 text-center rounded-md transition-colors duration-300 font-semibold ';
   const variantClasses = variant === 'primary' ? 'bg-white text-black hover:bg-red hover:text-white' : 'bg-red text-white hover:bg-white hover:text-black';
 
   return (
