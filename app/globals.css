@@ -42,3 +42,51 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+.clip-bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0); 
+}
+
+.clip-diagonal-right {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-from-right {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.slide-from-left {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.slide-from-right.visible {
+  animation: slideFromRight 0.8s ease-out forwards;
+}
+
+.slide-from-left.visible {
+  animation: slideFromLeft 0.8s ease-out forwards;
+}

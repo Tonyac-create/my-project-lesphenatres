@@ -11,9 +11,8 @@ export default function SectionAbout() {
                         src="/fond_scene.webp"
                         width={500}
                         height={500}
-                        objectFit="cover"
                         alt="Scène avec projecteurs"
-                        className="w-full h-full mb-8 rounded-3xl drop-shadow-[5px_10px_10px_rgba(0,0,0,0.7)]"
+                        className="w-full h-full object-cover mb-8 rounded-3xl drop-shadow-[5px_10px_10px_rgba(0,0,0,0.7)]"
                     />
                 </div>
                 <p className="text-lg">{`Née d’une envie de liberté artistique et d’un engagement fort pour le théâtre,
@@ -30,9 +29,8 @@ export default function SectionAbout() {
                     src="/fond_scene.webp"
                     width={500}
                     height={500}
-                    objectFit="cover"
                     alt="Scène avec projecteurs"
-                    className="w-full h-full mb-8 rounded-3xl drop-shadow-[5px_10px_10px_rgba(0,0,0,0.7)]"
+                    className="w-full h-full object-cover mb-8 rounded-3xl drop-shadow-[5px_10px_10px_rgba(0,0,0,0.7)]"
                 />
             </div>
         </section>
