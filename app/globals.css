@@ -44,7 +44,7 @@ body {
 }
 
 .clip-bottom-left {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0); 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
 }
 
 .clip-diagonal-right {
@@ -56,6 +56,7 @@ body {
     opacity: 0;
     transform: translateX(100px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -67,6 +68,7 @@ body {
     opacity: 0;
     transform: translateX(-100px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -89,4 +91,32 @@ body {
 
 .slide-from-left.visible {
   animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+@keyframes curtainLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes curtainRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.mobile-curtain-left {
+  animation: curtainLeft 1.5s ease-in-out 0.5s forwards;
+}
+
+.mobile-curtain-right {
+  animation: curtainRight 1.5s ease-in-out 0.5s forwards;
 }

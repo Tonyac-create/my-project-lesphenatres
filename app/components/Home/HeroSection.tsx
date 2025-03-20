@@ -20,7 +20,7 @@ export default function HeroSection() {
                     height={150}
                     alt="Rideau de théâtre"
                 />
-                <h2 className="font-dancing text-[2.25rem] md:text-5xl text-center mt-6">{`Le théâtre prend vie sous vos yeux !`}</h2>
+                <h2 className="font-dancing text-[2.25rem] md:text-6xl text-center mt-6">{`Le théâtre prend vie sous vos yeux !`}</h2>
                 <p className="text-center mt-4 text-lg md:text-2xl lg:w-[80%] xl:w-[60%]">{`Un espace où chacun progresse à son rythme, en s’amusant et sans prise de tête.
                  Ici, on vient comme on est, on crée, on improvise et surtout, on partage !`}</p>
                 <div className="flex flex-col sm:flex-row gap-7 mt-12">

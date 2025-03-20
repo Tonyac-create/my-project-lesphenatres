@@ -4,8 +4,8 @@ import Button from "../Button";
 export default function SectionAbout() {
     return (
         <section className="flex flex-col md:flex-row items-center my-16 px-5 tracking-wide">
-            <article className="lg:w-[40%] text-black p-5 mb-12 rounded-md">
-                <h3 className="font-dancing text-red text-3xl mb-3.5 font-semibold">Comment est née l'association ?</h3>
+            <article className="lg:w-[50%] text-black p-5 mb-12 rounded-md">
+                <h3 className="font-dancing text-red text-3xl md:text-5xl mb-3.5 font-semibold">Comment est née l'association ?</h3>
                 <div className="lg:hidden">
                     <Image
                         src="/fond_scene.webp"
@@ -22,9 +22,9 @@ export default function SectionAbout() {
                 <p className="mt-3 mb-10 text-lg">{`Depuis, nous avons développé plusieurs ateliers pour partager notre passion
                     de la scène dont le théatre d'improvisation, également pour les enfants
                     où nous mêlons improvisation et travail sur texte en laissant une place importante à leur créativité.`}</p>
-                <Button href="/troupe" variant="secondary">Je veux en savoir plus</Button>
+                <Button href="/troupe" variant="secondary">Toute l'histoire</Button>
             </article>
-            <div className="hidden lg:flex lg:w-[60%]">
+            <div className="hidden lg:flex lg:w-[50%]">
                 <Image
                     src="/fond_scene.webp"
                     width={500}
