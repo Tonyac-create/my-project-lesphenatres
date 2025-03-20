@@ -14,7 +14,7 @@ export default function SectionActivty() {
     }, []);
 
     return (
-        <section className="relative flex flex-col items-center gap-6 p-6 tracking-wide">
+        <section className="relative flex flex-col items-center gap-6 p-8 md:p-12 tracking-wide">
             <h3 className="font-dancing text-red text-3xl md:text-5xl mb-3.5 font-semibold flex mr-auto">Nos activités</h3>
             <div className="relative w-full slide-from-right">
                 <div className="p-6 bg-red text-black">
