@@ -14,10 +14,10 @@ export default function SectionActivty() {
     }, []);
 
     return (
-        <section className="relative flex flex-col items-center gap-6 p-8 md:p-12 tracking-wide">
+        <section className="relative flex flex-col items-start gap-6 p-8 md:px-28 md:py-11 tracking-wide">
             <h3 className="font-dancing text-red text-3xl md:text-5xl mb-3.5 font-semibold flex mr-auto">Nos activités</h3>
-            <div className="relative w-full slide-from-right">
-                <div className="p-6 bg-red text-black">
+            <div className="relative w-3/4 slide-from-right">
+                <div className="p-6 bg-red text-white">
                     <h2 className="text-2xl font-bold">Ateliers Adultes</h2>
                     <p className="text-lg md:text-xl">{`Séances d'improvisations, travail sur textes et pièce écrite, réalisée, mise en scène et jouée par notre troupe !`}</p>
                 </div>
@@ -29,7 +29,7 @@ export default function SectionActivty() {
                     className="w-full h-80 object-cover object-top clip-bottom-left"
                 />
             </div>
-            <div className="relative w-full mt-[-335px] mb-8 slide-from-left">
+            <div className="relative w-3/4 mt-[-335px] mb-8 slide-from-left">
                 <Image
                     src="/nid-hibou.webp"
                     width={500}

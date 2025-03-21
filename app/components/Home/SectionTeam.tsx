@@ -4,7 +4,7 @@ import CardTeam from "./CardTeam";
 
 export default function SectionTeam() {
     return (
-        <section className="flex flex-col items-center gap-6 p-8 md:p-12 tracking-wide">
+        <section className="flex flex-col items-center gap-6 p-8 md:px-28 md:py-11 tracking-wide">
             <h3 className="font-dancing text-red text-3xl md:text-5xl mb-3.5 pl-6 font-semibold flex mr-auto">Les membres de la troupe</h3>
             <div className="flex flex-wrap gap-8">
                 {team.map((member, index) => (

@@ -3,7 +3,7 @@ import Button from "../Button";
 
 export default function SectionAbout() {
     return (
-        <section className="flex flex-col md:flex-row items-center my-16 p-8 md:p-12 tracking-wide">
+        <section className="flex flex-col md:flex-row items-center my-16 p-8 md:px-28 md:py-11 tracking-wide">
             <article className="lg:w-[50%] text-black p-5 mb-12 rounded-md">
                 <h3 className="font-dancing text-red text-3xl md:text-5xl mb-3.5 font-semibold">Comment est née l'association ?</h3>
                 <div className="lg:hidden">

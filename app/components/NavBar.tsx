@@ -50,7 +50,7 @@ export default function NavBar() {
                     }`}
             >
                 <nav className="flex flex-col items-center bg-white shadow-lg transform transition-transform duration-700 ease-in-out">
-                    <ul className={`flex flex-col my-auto gap-5 text-2xl transition-all duration-700 transform 
+                    <ul className={`flex flex-col my-auto gap-5 text-2xl mb-2 transition-all duration-700 transform 
                             ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
                         <MenuNavigation setIsMenuOpen={setIsMenuOpen} />
                     </ul>
