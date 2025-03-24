@@ -6,10 +6,11 @@ export default function Footer() {
         <footer className="flex flex-col md:flex-row md:justify-between px-6  bg-white text-black text-center p-4">
             <div className="flex flex-col md:flex-row gap-4">
                 <Image
-                    src="/logo-phenatres.webp"
+                    src="/Logo_Phenatres.webp"
                     alt="Logo Les Phénâtres"
-                    width={80}
-                    height={80}
+                    width={100}
+                    height={100}
+                    className="object-cover"
                 />
                 <div className="flex flex-col items-start">
                     <h3>
@@ -35,7 +36,7 @@ export default function Footer() {
                     Suivez nos actualités
                 </Link>
             </div>
-            <p>&copy; 2025 Les Phénâtres de l'Artois. Tous droits reservés.</p>
+            <p>{`&copy; 2025 Les Phénâtres de l'Artois. Tous droits reservés.`}</p>
         </footer>
     )
 }

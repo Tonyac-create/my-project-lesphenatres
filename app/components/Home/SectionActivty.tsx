@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 import Button from "../Button";
+import { spectacles } from "@/app/utils/spectacle";
+import CardSpectacle from "./CardSpectacle";
 
 export default function SectionActivty() {
     const { observeElements } = useScrollAnimation();
@@ -11,7 +13,7 @@ export default function SectionActivty() {
     useEffect(() => {
         const observer = observeElements();
         return () => observer?.disconnect();
-    }, []);
+    }, [observeElements]);
 
     return (
         <section className="relative flex flex-col items-start gap-6 p-8 md:px-28 md:py-11 tracking-wide">
@@ -43,40 +45,20 @@ export default function SectionActivty() {
                 </div>
             </div>
             <Button href="/projets" variant="secondary">Je veux rejoindre la troupe</Button>
-            <h3 className="font-dancing text-red text-3xl md:text-5xl mt-8 mb-3.5 font-semibold flex mr-auto">Des spectacles engagés ! De l'improvisation !!</h3>
+            <h3 className="font-dancing text-red text-3xl md:text-5xl mt-8 mb-3.5 font-semibold flex mr-auto">{`Des spectacles engagés !`}</h3>
             <div className="flex flex-col lg:flex-row gap-8">
-                <article className="lg:w-[30%]">
-                    <h3 className="text-2xl md:text-4xl text-red">Écologie et dévelopement durable</h3>
-                    <p className="text-2xl">Un spectacle avec un sujet qui parle à tout le monde...</p>
-                </article>
-                <div className="relative lg:w-[40%] h-[500px] overflow-hidden group rounded-3xl transition-shadow duration-1500 hover:shadow-[0_0_20px_rgba(192,10,50,1)] curtain-container">
-                    <Image
-                        src="/Rideau_theatre.webp"
-                        width={500}
-                        height={500}
-                        alt="Rideau gauche"
-                        className="absolute top-0 left-0 w-1/2 h-full object-cover object-left transition-transform duration-1500 md:group-hover:-translate-x-full curtain-left"
+
+                {spectacles.map((spectacle) => (
+                    <CardSpectacle
+                        key={spectacle.id}
+                        description={spectacle.description}
+                        imageRideau={spectacle.imageRideau}
+                        image3={spectacle.image2}
+                        className={spectacle.id === 1 ? 'top-[15%] left-[20%] bg-red/70 text-white' : 'top-[25%] left-[20%] bg-white/70 text-black'}
                     />
-                    <Image
-                        src="/Rideau_theatre.webp"
-                        width={500}
-                        height={500}
-                        alt="Rideau droite"
-                        className="absolute top-0 right-0 w-1/2 h-full object-cover object-right transition-transform duration-1500 md:group-hover:translate-x-full curtain-right"
-                    />
-                    <Image
-                        src="/representation-phenatres.webp"
-                        width={500}
-                        height={500}
-                        alt="Image représentation"
-                        className="w-full h-full object-cover object-center"
-                    />
-                </div>
-                <article className="lg:w-[30%]">
-                    <h3 className="text-2xl md:text-4xl text-red">Le harcélement</h3>
-                    <p className="text-2xl">Écrit, réalisé, mise en scène par la troupe...</p>
-                </article>
+                ))}
             </div>
+            <Button href="/projets" variant="secondary">Détails sur les spectacles</Button>
         </section>
     )
 }

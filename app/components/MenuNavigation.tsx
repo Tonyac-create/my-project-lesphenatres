@@ -8,7 +8,7 @@ type MenuNavigationProps = {
 export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
   const navigation = [
     { name: "Accueil", href: "/" },
-    { name: "Notre troupe", href: "/troupe" },
+    { name: "Notre philosophie", href: "/philosophy" },
     { name: "Nos projets", href: "/projets" },
     { name: "L'équipe", href: "/equipe" },
     { name: "Contact", href: "/contact" },
