@@ -22,7 +22,7 @@ export default function SectionAbout() {
                 <p className="mt-3 mb-10 text-lg md:text-2xl">{`Depuis, nous avons développé plusieurs ateliers pour partager notre passion
                     de la scène dont le théatre d'improvisation, également pour les enfants
                     où nous mêlons improvisation et travail sur texte en laissant une place importante à leur créativité.`}</p>
-                <Button href="/troupe" variant="secondary">{`Toute l'histoire`}</Button>
+                <Button href="/philosophy" variant="secondary">{`Toute l'histoire`}</Button>
             </article>
             <div className="hidden lg:flex lg:w-[50%]">
                 <Image
