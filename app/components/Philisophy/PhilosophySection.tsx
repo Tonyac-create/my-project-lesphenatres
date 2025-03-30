@@ -1,6 +1,6 @@
 export default function PhilosophySection() {
     return (
-        <section className="flex flex-col my-16 p-8 md:px-28 md:py-11 tracking-wide">
+        <section className="flex flex-col mt-16 p-8 md:px-28 md:py-11 tracking-wide">
             <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Notre philosophie</h2>
             <p className="text-lg md:text-2xl">
                 <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
