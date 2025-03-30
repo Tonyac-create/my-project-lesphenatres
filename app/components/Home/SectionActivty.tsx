@@ -46,6 +46,7 @@ export default function SectionActivty() {
             </div>
             <Button href="/projets" variant="secondary">Je veux rejoindre la troupe</Button>
             <h3 className="font-dancing text-red text-3xl md:text-5xl mt-8 mb-3.5 font-semibold flex mr-auto">{`Des spectacles engagés !`}</h3>
+            <Button href="/projets" variant="secondary">Explorer les spectacles</Button>
             <div className="flex flex-col lg:flex-row gap-8">
 
                 {spectacles.map((spectacle) => (
@@ -54,11 +55,9 @@ export default function SectionActivty() {
                         description={spectacle.description}
                         imageRideau={spectacle.imageRideau}
                         image3={spectacle.image2}
-                        className={spectacle.id === 1 ? 'top-[15%] left-[20%] bg-red/70 text-white' : 'top-[25%] left-[20%] bg-white/70 text-black'}
                     />
                 ))}
             </div>
-            <Button href="/projets" variant="secondary">Détails sur les spectacles</Button>
         </section>
     )
 }

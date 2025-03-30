@@ -11,21 +11,21 @@ export const team = [
         alt: "Nicole Yvain",
         name: "Nicole Yvain",    
         role: "Vice-présidente",
-        description: "L'assistante du grand manitou"
+        description: "Le bras droit du grand manitou"
     },
     {
         src: "/Lucas.png",
         alt: "Hugo",
         name: "Hugo Petithomme",    
         role: "Secrétaire",
-        description: "Une belle plume"
+        description: "Elle note tout, rien ne lui échappe"
     },
     {
         src: "/Léa.png",
         alt: "Julie",
         name: "Julie Salembier",    
         role: "Secrétaire adjointe",
-        description: "L'assistante de notre plume"
+        description: "Son backup, toujours prête"
     },
     {
         src: "/Kevin.png",

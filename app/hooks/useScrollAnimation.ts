@@ -14,6 +14,12 @@ export const useScrollAnimation = () => {
                         if (leftCurtain) leftCurtain.classList.add('mobile-curtain-left');
                         if (rightCurtain) rightCurtain.classList.add('mobile-curtain-right');
                     }
+
+                    // Handle blur-in animation
+                    if (entry.target.classList.contains('opacity-0')) {
+                        entry.target.classList.remove('opacity-0');
+                        entry.target.classList.add('animate-blur-in');
+                    }
                 }
             });
         }, { threshold: 0.3 });
@@ -28,10 +34,12 @@ export const useScrollAnimation = () => {
         const rightElements = document.querySelectorAll('.slide-from-right');
         const leftElements = document.querySelectorAll('.slide-from-left');
         const curtainElements = document.querySelectorAll('.curtain-container');
+        const blurElements = document.querySelectorAll('.opacity-0');
 
         rightElements.forEach(el => observer.observe(el));
         leftElements.forEach(el => observer.observe(el));
         curtainElements.forEach(el => observer.observe(el));
+        blurElements.forEach(el => observer.observe(el));
 
         return observer;
     };

@@ -7,7 +7,7 @@ export default function News() {
             <p className="text-lg md:text-2xl">{`Retrouvez les moments forts de la troupe, des répétitions aux grandes premières.`}</p>
             <div className="flex flex-col justify-center lg:flex-row gap-20 my-5">
                 <p className="text-lg md:text-2xl">{`Rejoignez-nous sur les réseaux pour ne rien manquer du spectacle !`}</p>
-                <a href="https://www.facebook.com/lesphenatres" target="_blank" className="group inline-flex items-center gap-2 text-3xl hover:text-red">
+                <a href="https://www.facebook.com/lesphenatres" target="_blank" className="group inline-flex items-center gap-2 text-2xl hover:text-red">
                     <Image
                         src="/Mask_facebook.webp"
                         width={100}
@@ -17,7 +17,7 @@ export default function News() {
                     />
                     Nous suivre sur Facebook
                 </a>
-                <a href="#" target="_blank" className="group inline-flex items-center gap-2 text-3xl hover:text-red">
+                <a href="#" target="_blank" className="group inline-flex items-center gap-2 text-2xl hover:text-red">
                     <Image
                         src="/Mask_tiktok.webp"
                         width={100}

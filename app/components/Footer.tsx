@@ -24,19 +24,19 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
+            <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="hover:text-blue-700 inline-flex items-center">
+                <Image
+                    src="/Facebook.png"
+                    alt="Logo Facebook"
+                    width={50}
+                    height={50}
+                />
+                Suivez nos actualités
+            </Link>
             <div className="flex flex-col gap-4">
                 <Link href="/mentions" className="hover:text-red">Mentions légales</Link>
-                <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="hover:text-red inline-flex items-center">
-                    <Image
-                        src="/Facebook.png"
-                        alt="Logo Facebook"
-                        width={50}
-                        height={50}
-                    />
-                    Suivez nos actualités
-                </Link>
+                <p className="font-semibold">&copy;{`2025 Les Phénâtres de l'Artois. Tous droits reservés.`}</p>
             </div>
-            <p>{`&copy; 2025 Les Phénâtres de l'Artois. Tous droits reservés.`}</p>
         </footer>
     )
 }

@@ -1,13 +1,13 @@
 export const spectacles = [
     {
         id: 1,
-        description: `Un spectacle sur l'environnement`,
+        description: `Engagement pour l'environnement`,
         imageRideau: '/Rideau_theatre.webp',
         image2: '/Spectacle_1.webp',
     },
     {
         id: 2,
-        description: `Un spectacle sur le harcèlement`,
+        description: `Militant contre harcèlement`,
         imageRideau: '/Rideau_theatre.webp',
         image2: '/Spectacle_2.webp',
     },

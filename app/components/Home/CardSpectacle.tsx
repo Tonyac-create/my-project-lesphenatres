@@ -8,10 +8,9 @@ type CardSpectacleProps = {
     description: string;
     imageRideau: string;
     image3: string;
-    className: string
 }
 
-export default function CardSpectacle({ description, imageRideau, image3, className }: CardSpectacleProps) {
+export default function CardSpectacle({ description, imageRideau, image3 }: CardSpectacleProps) {
     const { observeElements } = useScrollAnimation();
 
     useEffect(() => {
@@ -21,9 +20,7 @@ export default function CardSpectacle({ description, imageRideau, image3, classN
 
     return (
         <article className="relative">
-            <div className={`absolute p-2 rounded-md z-10 ${className}`}>
-                <p className="text-2xl">{description}</p>
-            </div>
+                <p className="text-2xl mb-4 text-center">{description}</p>
             <div className="relative overflow-hidden rounded-3xl transition-shadow duration-1500 curtain-container">
                 <Image
                     src={imageRideau}
