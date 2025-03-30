@@ -6,6 +6,7 @@ import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 import Button from "../Button";
 import { spectacles } from "@/app/utils/spectacle";
 import CardSpectacle from "./CardSpectacle";
+import SectionProposition from "./SectionProposition";
 
 export default function SectionActivty() {
     const { observeElements } = useScrollAnimation();
@@ -45,6 +46,7 @@ export default function SectionActivty() {
                 </div>
             </div>
             <Button href="/projets" variant="secondary">Je veux rejoindre la troupe</Button>
+            <SectionProposition />
             <h3 className="font-dancing text-red text-3xl md:text-5xl mt-8 mb-3.5 font-semibold flex mr-auto">{`Des spectacles engagés !`}</h3>
             <Button href="/projets" variant="secondary">Explorer les spectacles</Button>
             <div className="flex flex-col lg:flex-row gap-8">

@@ -24,8 +24,7 @@ export default function HeroSection() {
                 <p className="text-center mt-4 text-lg md:text-2xl lg:w-[80%] xl:w-[60%]">{`Un espace où chacun progresse à son rythme, en s’amusant et sans prise de tête.
                  Ici, on vient comme on est, on crée, on improvise et surtout, on partage !`}</p>
                 <div className="flex flex-col sm:flex-row gap-7 mt-12">
-                    <Button href="/troupe" variant="primary">Notre philosophie</Button>
-                    {/* <Button href="/contact" variant="secondary">Discutons ensemble</Button> */}
+                    <Button href="/troupe" variant="primary">Notre philosophie</Button> 
                     <Button href="/contact" variant="secondary">{`Besoin d'infos ?`}</Button>
                 </div>
             </div>

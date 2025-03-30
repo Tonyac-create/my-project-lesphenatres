@@ -21,20 +21,20 @@ export default function CardSpectacle({ description, imageRideau, image3 }: Card
     return (
         <article className="relative">
                 <p className="text-2xl mb-4 text-center">{description}</p>
-            <div className="relative overflow-hidden rounded-3xl transition-shadow duration-1500 curtain-container">
+            <div className="relative overflow-hidden transition-shadow duration-1500 curtain-container">
                 <Image
                     src={imageRideau}
                     width={500}
                     height={500}
                     alt="Rideau gauche"
-                    className="absolute top-0 left-0 w-1/2 h-full object-cover object-left transition-transform duration-1500  curtain-left"
+                    className="absolute top-0 left-0 w-1/2 h-full object-cover object-left transition-transform duration-1500 curtain-left"
                 />
                 <Image
                     src={imageRideau}
                     width={500}
                     height={500}
                     alt="Rideau droite"
-                    className="absolute top-0 right-0 w-1/2 h-full object-cover object-right transition-transform duration-1500  curtain-right"
+                    className="absolute top-0 right-0 w-1/2 h-full object-cover object-right transition-transform duration-1500 curtain-right"
                 />
                 <Image
                     src={image3}

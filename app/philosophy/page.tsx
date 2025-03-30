@@ -1,7 +1,11 @@
+import HeroSection from "../components/Philisophy/HeroSection";
+import PhilosophySection from "../components/Philisophy/PhilosophySection";
+
 export default function Troupe() {
     return (
-        <div className="">
-            <h1>La troupe</h1>
-        </div>
+        <>
+            <HeroSection />
+            <PhilosophySection />
+        </>
     );
 }
