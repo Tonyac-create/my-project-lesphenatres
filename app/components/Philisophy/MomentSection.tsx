@@ -29,23 +29,23 @@ const Moment = ({ title, description, image }: MomentProps) => {
     }, []);
 
     return (
-        <div ref={momentRef} className="moment flex items-center justify-between space-x-8 opacity-0">
-            <div className="flex-1/4 text-center">
-                <p className="text-xl font-semibold">{title}</p>
-                <p className="mt-2 text-gray-600">{description}</p>
+        <div ref={momentRef} className="moment flex flex-col md:flex-row items-center justify-between md:space-x-8 space-y-4 md:space-y-0 opacity-0">
+            <div className="w-full md:w-1/3 text-center md:text-left">
+                <h3 className="text-2xl font-semibold text-red">{title}</h3>
+                <p className="mt-2 text-gray-600 text-lg">{description}</p>
             </div>
-            <div className="flex-3/4">
-                <Image
-                    src={image}
-                    width={400}
-                    height={400}
-                    alt={title}
-                    className="rounded-lg shadow-md transition-all duration-500 transform hover:scale-105"
-                />
+            <div className="w-full md:w-2/3">
+                <div className="relative aspect-video">
+                    <Image
+                        src={image}
+                        fill
+                        alt={title}
+                        className="rounded-lg shadow-md transition-all duration-500 transform hover:scale-105 object-cover"
+                    />
+                </div>
             </div>
         </div>
     );
 };
 
 export default Moment;
-
