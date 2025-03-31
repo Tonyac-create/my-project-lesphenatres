@@ -5,7 +5,7 @@ import Moment from './MomentSection';
 export default function FriseSection() {
     return (
         <section className="relative p-8 md:px-28 md:py-11 tracking-wide">
-            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Un engagement concret</h2>
+            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Les phases de création</h2>
             
             {/* Timeline line - hidden on mobile, visible from md breakpoint */}
             <div className="hidden md:block absolute left-[5%] lg:left-1/4 top-36 h-[87%] border-l-2 border-gray-400"></div>

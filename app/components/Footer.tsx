@@ -16,11 +16,12 @@ export default function Footer() {
                     <h3>
                         {`Les Phénatres de l'Artois`}
                     </h3>
+                    <p>2 rue de la Douizième 62 000 Arras</p>
                     <p>
                         {`Email : lesphenatresdelartois62000@gmail.com`}
                     </p>
                     <p>
-                        {`Téléphone : 06 01 02 03 04`}
+                        {`Téléphone : 06 68 37 70 32`}
                     </p>
                 </div>
             </div>

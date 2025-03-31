@@ -18,7 +18,7 @@ export const team = [
         alt: "Hugo",
         name: "Hugo Petithomme",    
         role: "Secrétaire",
-        description: "Elle note tout, rien ne lui échappe"
+        description: "Il note tout, rien ne lui échappe"
     },
     {
         src: "/Léa.png",

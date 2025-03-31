@@ -12,7 +12,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section className={`pt-[8.125rem] mt-[5.875rem] px-5 tracking-wide h-screen bg-[url(/Rideau_theatre.webp)] bg-cover bg-center}`}>
+        <section className={`pt-[8.125rem] mt-[5.875rem] px-5 tracking-wide sm:h-screen pb-14 sm:pb-0 bg-[url(/Rideau_theatre.webp)] bg-cover bg-center}`}>
             <div className={`flex flex-col items-center text-white transition-opacity duration-3000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                 <Image
                     src="/Logo_Phenatres.webp"
