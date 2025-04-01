@@ -10,8 +10,8 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
     { name: "Accueil", href: "/" },
     { name: "Notre philosophie", href: "/philosophy" },
     { name: "Nos projets", href: "/projets" },
-    { name: "L'équipe", href: "/equipe" },
-    { name: "Contact", href: "/contact" },
+    { name: "Nos partenaires", href: "/equipe" },
+    { name: "Infos pratiques/Contact", href: "/contact" },
   ];
 
   const pathname = usePathname();
