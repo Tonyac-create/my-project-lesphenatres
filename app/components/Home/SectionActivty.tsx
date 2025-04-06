@@ -25,20 +25,20 @@ export default function SectionActivty() {
                     <p className="text-lg md:text-xl">{`Séances d'improvisations, travail sur textes et pièce écrite, réalisée, mise en scène et jouée par notre troupe !`}</p>
                 </div>
                 <Image
-                    src="/ateliers-les-phenatres.webp"
+                    src="/atelier_adulte.jpg"
                     width={500}
                     height={500}
                     alt="Atelier théâtre adultes"
-                    className="w-full h-80 object-cover object-top clip-bottom-left"
+                    className="w-full h-80 object-cover object-center clip-bottom-left"
                 />
             </div>
             <div className="relative w-3/4 mt-[-335px] mb-8 slide-from-left">
                 <Image
-                    src="/nid-hibou.webp"
+                    src="/enfant_atelier.jpg"
                     width={500}
                     height={500}
                     alt="Atelier théâtre enfants"
-                    className="w-full h-80 object-cover object-bottom clip-diagonal-right"
+                    className="w-full h-80 object-cover object-top clip-diagonal-right"
                 />
                 <div className="p-6 bg-black text-white">
                     <h2 className="text-2xl font-bold">Ateliers Enfants</h2>
