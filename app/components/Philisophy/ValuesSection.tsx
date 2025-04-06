@@ -48,9 +48,9 @@ export default function ValuesSection() {
                 </div>
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-4 opacity-0">
                     <Image
-                        src="/arrow-rotate-right.svg"
-                        width={80}
-                        height={80}
+                        src="/Icon_perons.png"
+                        width={100}
+                        height={100}
                         alt=""
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />

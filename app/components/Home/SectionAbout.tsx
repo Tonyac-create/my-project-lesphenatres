@@ -15,13 +15,10 @@ export default function SectionAbout() {
                         className="w-full h-full object-cover mb-8 rounded-3xl drop-shadow-[5px_10px_10px_rgba(0,0,0,0.7)]"
                     />
                 </div>
-                <p className="text-lg md:text-2xl">{`Née d’une envie de liberté artistique et d’un engagement fort pour le théâtre,
-                    notre association a vu le jour officiellement la veille du premier confinement
-                    de 2020. Cette première année compliquée nous a pourtant permis de poser des
-                    bases solides et de préparer notre véritable lancement l’année suivante.`}</p>
-                <p className="mt-3 mb-10 text-lg md:text-2xl">{`Depuis, nous avons développé plusieurs ateliers pour partager notre passion
-                    de la scène dont le théatre d'improvisation, également pour les enfants
-                    où nous mêlons improvisation et travail sur texte en laissant une place importante à leur créativité.`}</p>
+                <p className="text-lg md:text-2xl">{`Notre association a été créée en 2020, au tristement célèbre moment de la pandémie
+                 du covid 19, elle a été créée par un groupe de personnes voulant juste faire du théâtre et en partageant cette passion 
+                 au plus grand nombre, tout en restant contrairement à une expérience précédente.`}</p>
+                <p className="mt-3 mb-10 text-lg md:text-2xl">{`Le nom de l'association “Les phénâtres de l'Artois” est un mélange des 2 mots...`}</p>
                 <Button href="/philosophy" variant="secondary">{`Toute l'histoire`}</Button>
             </article>
             <div className="hidden lg:flex lg:w-[50%]">
