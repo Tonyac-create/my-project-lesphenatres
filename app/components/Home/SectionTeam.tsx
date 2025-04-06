@@ -12,7 +12,6 @@ export default function SectionTeam() {
                 ))}
             </div>
             <Button href="/equipe" variant="secondary">{`Voir toute l'équipe`}</Button>
-            <div className="w-3/4 bg-red h-1 mx-auto"></div>
         </section>
     )
 }
