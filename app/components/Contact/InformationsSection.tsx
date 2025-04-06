@@ -3,9 +3,9 @@ import FormContact from "../FormContact";
 export default function InformationsSection() {
     return (
         <section className="mt-24 p-8 md:px-28 md:py-11 tracking-wide">
-            <h2 className="text-4xl text-red font-bold mb-4 font-dancing">Informations pratiques</h2>
             <div className="flex flex-col md:flex-row gap-7">
                 <div className="space-y-10 w-1/3">
+                    <h2 className="text-4xl text-red font-bold mb-4 font-dancing">Informations pratiques</h2>
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Lieu des répétitions</h3>
                         <p className="text-gray-700">
@@ -73,8 +73,8 @@ export default function InformationsSection() {
                         <h3 className="text-2xl text-red font-bold mb-4">{`Téléchargez nos fiches d'inscription`}</h3>
                         <div className="flex flex-col space-y-4">
                             <p className="font-semibold">Pour adulte</p>
-                            <a 
-                                href="/pdf/droit_image_adulte.pdf" 
+                            <a
+                                href="/pdf/droit_image_adulte.pdf"
                                 download
                                 className="inline-flex items-center text-gray-700 hover:text-red transition-colors"
                             >
@@ -83,8 +83,8 @@ export default function InformationsSection() {
                                 </svg>
                                 {`Droit à l'image`}
                             </a>
-                            <a 
-                                href="/pdf/fiche_renseignement_adulte.pdf" 
+                            <a
+                                href="/pdf/fiche_renseignement_adulte.pdf"
                                 download
                                 className="inline-flex items-center text-gray-700 hover:text-red transition-colors"
                             >
@@ -94,8 +94,8 @@ export default function InformationsSection() {
                                 {`Fiche de renseignement`}
                             </a>
                             <p className="font-semibold">Pour enfant</p>
-                            <a 
-                                href="/pdf/droit_image_mineur.pdf" 
+                            <a
+                                href="/pdf/droit_image_mineur.pdf"
                                 download
                                 className="inline-flex items-center text-gray-700 hover:text-red transition-colors"
                             >
@@ -104,8 +104,8 @@ export default function InformationsSection() {
                                 </svg>
                                 {`Droit à l'image mineur`}
                             </a>
-                            <a 
-                                href="/pdf/Autorisation_de_sorti.pdf" 
+                            <a
+                                href="/pdf/Autorisation_de_sorti.pdf"
                                 download
                                 className="inline-flex items-center text-gray-700 hover:text-red transition-colors"
                             >
@@ -114,8 +114,8 @@ export default function InformationsSection() {
                                 </svg>
                                 {`Autorisation de sortie`}
                             </a>
-                            <a 
-                                href="/pdf/fiche_renseignement_enfant.pdf" 
+                            <a
+                                href="/pdf/fiche_renseignement_enfant.pdf"
                                 download
                                 className="inline-flex items-center text-gray-700 hover:text-red transition-colors"
                             >
