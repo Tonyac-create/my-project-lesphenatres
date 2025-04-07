@@ -199,8 +199,46 @@ body {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.animation-down {
+  opacity: 0;
+  transform: translateY(-5rem);
+}
+
+.animation-down-1 {
+  animation: slideDown 1s ease-out forwards;
+}
+
+.animation-down-2 {
+  animation: slideDown 1s ease-out 200ms forwards;
+}
+
+.animation-down-3 {
+  animation: slideDown 1s ease-out 400ms forwards;
+}
+
+.animation-down-4 {
+  animation: slideDown 1s ease-out 600ms forwards;
+}
+
+.animation-down-5 {
+  animation: slideDown 1s ease-out 800ms forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
