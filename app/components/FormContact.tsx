@@ -12,11 +12,30 @@ export default function FormContact() {
         setIsSubmitting(true)
         
         try {
-            // Here you'll implement the Resend email sending logic later
-            console.log('Form submitted:', formData)
-            resetForm()
+            const response = await fetch('/api/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: `${formData.firstName} ${formData.lastName}`,
+                    email: formData.email,
+                    phone: formData.phone,
+                    message: `
+                        ${formData.message}
+                    `
+                }),
+            })
+
+            if (response.ok) {
+                alert('Message envoyé avec succès!')
+                resetForm()
+            } else {
+                throw new Error('Erreur lors de l\'envoi')
+            }
         } catch (error) {
             console.error('Error sending email:', error)
+            alert('Erreur lors de l\'envoi du message')
         } finally {
             setIsSubmitting(false)
         }
