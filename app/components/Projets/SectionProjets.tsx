@@ -1,5 +1,5 @@
 import { spectaclesComplete } from "@/app/utils/spectacle";
-import CardSpectacle from "../Projets/CardSpectacle";
+import CardSpectacle from "./CardSpectacle";
 
 export default function SectionProjets() {
     return (

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FormContact from "../FormContact";
 
 export default function InformationsSection() {
@@ -67,6 +68,15 @@ export default function InformationsSection() {
                     </div>
                 </div>
                 <div className="w-2/3">
+                    <Image
+                        src="/Logo_Phenatres.webp"
+                        width={200}
+                        height={200}
+                        priority={true}
+                        quality={100}
+                        alt="Logo"
+                        className="object-cover mx-auto"
+                    />
                     <h2 className="text-4xl text-red font-bold mb-4 font-dancing">{`Un renseignement, une demande pour un spectacle ?`}</h2>
                     <FormContact />
                     <div className="mt-8">
