@@ -18,7 +18,7 @@ export default function SectionProposition() {
             <div className="flex flex-col justify-center items-center md:flex-row gap-11 md:gap-24 mt-5 mb-10">
                 <div className="w-[40%] h-[230px] p-7 flex flex-col justify-center items-center border-2 rounded-md border-red">
                     <Image
-                        src="/clapperboard.svg"
+                        src="/icons/clapperboard.svg"
                         width={50}
                         height={50}
                         alt="Calendrier"
@@ -28,13 +28,13 @@ export default function SectionProposition() {
                 </div>
                 <div className="w-[40%] h-[230px] p-7 flex flex-col justify-center items-center border-2 rounded-md border-red">
                     <Image
-                        src="/calendar.svg"
+                        src="/icons/calendar.svg"
                         width={50}
                         height={50}
                         alt="Clap cinéma"
                         className="animate-pulse"
                     />
-                    <p className="my-4 text-2xl">{`Envie d’organiser un spectacle ? Parlons-en dès maintenant.`}</p>
+                    <p className="my-4 text-2xl text-center">{`Envie d’organiser un spectacle ? Parlons-en dès maintenant.`}</p>
                 </div>
             </div>
             <div className="flex justify-center">

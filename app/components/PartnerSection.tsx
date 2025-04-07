@@ -18,45 +18,55 @@ export default function PartnerSection() {
             <div className="flex flex-wrap justify-center items-center gap-7 slide-from-left">
                 <Link href="https://www.facebook.com/Arras.Associations?locale=fr_FR" target="_blank" className="partner-image" title="Voir la page Facebook">
                     <Image
-                        src="/Forum_Asso_arras.jpg"
+                        src="/partners/Forum_Asso_arras.jpg"
                         width={200}
                         height={200}
+                        priority={true}
+                        quality={100}
                         alt="Forum des associations d'Arras"
                         className="object-cover object-center"
                     />
                 </Link>
                 <Link href="https://www.officeculturelarras.fr/page/1690940-accueil" target="_blank" className="partner-image" title="Voir le site">
                     <Image
-                        src="/Office_Culturel_Arras.png"
+                        src="/partners/Office_Culturel_Arras.png"
                         width={200}
                         height={200}
+                        priority={true}
+                        quality={100}
                         alt="Office Culturel d'Arras"
                         className="object-cover object-center"
                     />
                 </Link>
                 <Link href="https://www.arras.fr/" target="_blank" className="partner-image"  title="Voir le site">
                     <Image
-                        src="/Ville_Arras.png"
+                        src="/partners/Ville_Arras.webp"
                         width={200}
                         height={200}
+                        priority={true}
+                        quality={100}
                         alt="Ville d'Arras"
                         className="object-cover object-center"
                     />
                 </Link>
                 <Link href="https://reptileblade.wixsite.com/reptileblade" target="_blank" className="partner-image"  title="Voir le site">
                     <Image
-                        src="/Reptilblade.jpg"
+                        src="/partners/Reptilblade.webp"
                         width={200}
                         height={200}
+                        priority={true}
+                        quality={100}
                         alt="ReptilBlade"
                         className="object-cover object-center"
                     />
                 </Link>
                 <Link href="https://www.free-dev.fr/" target="_blank" className="partner-image"  title="Voir le site">
                     <Image
-                        src="/free.png"
+                        src="/partners/free.png"
                         width={200}
                         height={200}
+                        priority={true}
+                        quality={100}
                         alt="Free-dev"
                         className="object-cover object-center"
                     />

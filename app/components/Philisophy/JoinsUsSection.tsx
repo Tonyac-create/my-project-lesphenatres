@@ -10,7 +10,7 @@ export default function JoinsUsSection() {
                     <h3 className="text-xl mb-5">Découvrez notre programmation</h3>
                     <a href="https://www.facebook.com/lesphenatres" target="_blank" className="group inline-flex items-center gap-2 mb-3 text-2xl hover:text-red">
                         <Image
-                            src="/Mask_facebook.webp"
+                            src="/icons/Mask_facebook.webp"
                             width={50}
                             height={50}
                             alt="Facebook"
@@ -20,7 +20,7 @@ export default function JoinsUsSection() {
                     </a>
                     <a href="#" target="_blank" className="group inline-flex items-center gap-2 text-2xl hover:text-red">
                         <Image
-                            src="/Mask_tiktok.webp"
+                            src="/icons/Mask_tiktok.webp"
                             width={50}
                             height={50}
                             alt="Tiktok"

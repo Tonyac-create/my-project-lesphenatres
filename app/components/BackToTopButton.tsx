@@ -35,7 +35,7 @@ export default function BackToTopButton() {
                     aria-label="Retour en haut de page"
                 >
                     <Image
-                        src="/arrow-up-solid.svg"
+                        src="/icons/arrow-up-solid.svg"
                         width={30}
                         height={30}
                         alt='Retour en haut de page'

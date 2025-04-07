@@ -9,7 +9,7 @@ export default function News() {
             <div className="flex flex-col justify-center lg:flex-row gap-20 my-5">
                 <a href="https://www.facebook.com/lesphenatres" target="_blank" className="group inline-flex items-center gap-2 text-2xl hover:text-red">
                     <Image
-                        src="/Mask_facebook.webp"
+                        src="/icons/Mask_facebook.webp"
                         width={100}
                         height={100}
                         alt="Facebook"
@@ -19,7 +19,7 @@ export default function News() {
                 </a>
                 <a href="#" target="_blank" className="group inline-flex items-center gap-2 text-2xl hover:text-red">
                     <Image
-                        src="/Mask_tiktok.webp"
+                        src="/icons/Mask_tiktok.webp"
                         width={100}
                         height={100}
                         alt="Tiktok"

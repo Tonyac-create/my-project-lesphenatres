@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
             <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="hover:text-blue-700 inline-flex items-center">
                 <Image
-                    src="/Facebook.png"
+                    src="/icons/Facebook.png"
                     alt="Logo Facebook"
                     width={50}
                     height={50}

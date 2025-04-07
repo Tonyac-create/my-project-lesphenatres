@@ -18,7 +18,7 @@ export default function ValuesSection() {
             <div className="flex flex-wrap gap-12 mt-5">
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-1 opacity-0">
                     <Image
-                        src="/heart.svg"
+                        src="/icons/heart.svg"
                         width={80}
                         height={80}
                         alt=""
@@ -28,7 +28,7 @@ export default function ValuesSection() {
                 </div>
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-2 opacity-0">
                     <Image
-                        src="/shield.svg"
+                        src="/icons/shield.svg"
                         width={80}
                         height={80}
                         alt=""
@@ -38,7 +38,7 @@ export default function ValuesSection() {
                 </div>
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-3 opacity-0">
                     <Image
-                        src="/star.svg"
+                        src="/icons/star.svg"
                         width={89}
                         height={89}
                         alt=""
@@ -48,7 +48,7 @@ export default function ValuesSection() {
                 </div>
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-4 opacity-0">
                     <Image
-                        src="/Icon_perons.png"
+                        src="/icons/Icon_perons.png"
                         width={100}
                         height={100}
                         alt=""

@@ -139,7 +139,6 @@ body {
   animation: blurFadeIn 1s ease-out forwards;
 }
 
-/* Animation de flip */
 @keyframes flipAnimation {
   0% {
     transform: rotateX(180deg);
