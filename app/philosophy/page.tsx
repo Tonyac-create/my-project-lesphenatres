@@ -10,8 +10,10 @@ export default function Troupe() {
         <>
             <HeroSection />
             <HistorySection />
-            <ValuesSection />
-            <PhilosophySection />
+            <div className="grid grid-cols-1 md:grid-cols-2">
+                <PhilosophySection />
+                <ValuesSection />
+            </div>
             <FriseSection />
             <JoinsUsSection />
         </>

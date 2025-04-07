@@ -48,7 +48,6 @@ export default function SectionActivty() {
             <Button href="/projets" variant="secondary">Je veux rejoindre la troupe</Button>
             <SectionProposition />
             <h3 className="font-dancing text-red text-3xl md:text-5xl mt-8 mb-3.5 font-semibold flex mr-auto">{`Des spectacles engagés !`}</h3>
-            <Button href="/projets" variant="secondary">Explorer les spectacles</Button>
             <div className="flex flex-col justify-center lg:flex-row gap-8">
                 {spectacles.map((spectacle) => (
                     <CardSpectacle
@@ -59,6 +58,7 @@ export default function SectionActivty() {
                     />
                 ))}
             </div>
+            <Button href="/projets" variant="secondary">Explorer les spectacles</Button>
         </section>
     )
 }
