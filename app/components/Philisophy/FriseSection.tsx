@@ -6,6 +6,7 @@ export default function FriseSection() {
     return (
         <section className="relative p-8 md:px-28 md:py-11 tracking-wide">
             <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">{`Naissance d'un spectacle`}</h2>
+            <p>Un spectacle se construit comme un paysage : d’abord les lignes essentielles, les repères fixes, puis les détails viennent peupler l’espace. On travaille la matière du jeu, les rythmes, les silences, les présences. Tout s’affine, se tisse, jusqu’à trouver l’équilibre entre ce qui est dit, montré et ressenti.</p>
             
             {/* Timeline line - hidden on mobile, visible from md breakpoint */}
             <div className="hidden md:block absolute left-[5%] lg:left-1/4 top-36 h-[87%] border-l-2 border-gray-400"></div>
@@ -20,11 +21,6 @@ export default function FriseSection() {
                     title="Mise en scène" 
                     description="Une fois les mots bien en place, les acteurs peuvent enfin s’en libérer pour jouer, ressentir et habiter pleinement leurs personnages." 
                     image="/Miseenscene.jpg" 
-                />
-                <Moment 
-                    title="Construction du spectacle"
-                    description="Un spectacle se construit comme un paysage : d’abord les lignes essentielles, les repères fixes, puis les détails viennent peupler l’espace. On travaille la matière du jeu, les rythmes, les silences, les présences. Tout s’affine, se tisse, jusqu’à trouver l’équilibre entre ce qui est dit, montré et ressenti." 
-                    image="/theatre_scene.jpg" 
                 />
                 <Moment 
                     title="Le fil rouge"

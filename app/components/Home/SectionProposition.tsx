@@ -38,7 +38,7 @@ export default function SectionProposition() {
                 </div>
             </div>
             <div className="flex justify-center">
-                <Button href="/contact" variant="secondary">{`Je veux réserver un spectacle !`}</Button>
+                <Button href="/contact" variant="secondary">{`Un spectacle m'intéresse !`}</Button>
             </div>
         </section>
     )

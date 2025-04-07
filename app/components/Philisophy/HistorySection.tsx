@@ -24,7 +24,7 @@ export default function HistorySection() {
                     </span>
                 </p>
                 {`Elle est basée à l'Office Culturel d’Arras dans le Pas de Calais, qui est pour nous un soutien plus qu’essentiel au même titre que 
-                 la commune qui prête les locaux à cette structure ce qui nous donne accès à un panel de service immense. Notre association a pour but 
+                 la ville qui prête les locaux à cette structure ce qui nous donne accès à un panel de services immense. Notre association a pour but 
                  de faire découvrir le théâtre d’improvisation et laisser libre court à l'imagination. Selon les projets et les groupes, nous faisons 
                  aussi appel au théâtre de texte par le biais de divers exercices, elle est une grande famille qui réunit des personnes de différents 
                  âges et de différents horizons. Aujourd’hui, l’association, c’est plusieurs ateliers pour différents groupes permettant sur la base

@@ -9,7 +9,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
   const navigation = [
     { name: "Accueil", href: "/" },
     { name: "Notre philosophie", href: "/philosophy" },
-    { name: "Nos projets", href: "/projets" },
+    { name: "Nos spectacles", href: "/projets" },
     // { name: "Nos partenaires", href: "/equipe" },
     { name: "Infos pratiques/Contact", href: "/contact" },
   ];

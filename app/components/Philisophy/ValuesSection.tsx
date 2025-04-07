@@ -24,7 +24,7 @@ export default function ValuesSection() {
                         alt=""
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
-                    <p className="text-xl mt-3 text-center">{`Jouer, vibrer, transmettre l'émotion`}</p>
+                    <p className="text-xl mt-3 text-center">{`Jouer, vibrer, transmettre des émotions`}</p>
                 </div>
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-2 opacity-0">
                     <Image

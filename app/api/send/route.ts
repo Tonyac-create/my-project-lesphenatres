@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 
     const data = await resend.emails.send({
       from: 'Les Phénâtres <onboarding@resend.dev>',
-      to: 'lesphenatresdelartois62000@gmail.com',
+      to: 'angelique.copere@free-dev.fr',
       subject: `Nouveau message de ${name}`,
       // @ts-ignore
       react: EmailTemplate({

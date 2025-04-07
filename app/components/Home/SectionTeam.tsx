@@ -11,7 +11,6 @@ export default function SectionTeam() {
                     <CardTeam key={index} src={member.src} alt={member.alt} name={member.name} role={member.role} description={member.description} />
                 ))}
             </div>
-            <Button href="/equipe" variant="secondary">{`Voir toute l'équipe`}</Button>
         </section>
     )
 }
