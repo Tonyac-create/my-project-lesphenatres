@@ -13,6 +13,7 @@ export async function POST(request: Request) {
       from: 'Les Phénâtres <onboarding@resend.dev>',
       to: 'lesphenatresdelartois62000@gmail.com',
       subject: `Nouveau message de ${name}`,
+      // @ts-ignore
       react: EmailTemplate({
         firstName,
         lastName,
