@@ -1,5 +1,4 @@
 import { team } from "../../utils/team";
-import Button from "../Button";
 import CardTeam from "./CardTeam";
 
 export default function SectionTeam() {

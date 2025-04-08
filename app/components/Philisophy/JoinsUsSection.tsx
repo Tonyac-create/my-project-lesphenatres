@@ -18,7 +18,7 @@ export default function JoinsUsSection() {
                         />
                         Nous suivre sur Facebook
                     </a>
-                    <a href="#" target="_blank" className="group inline-flex items-center gap-2 text-2xl hover:text-red">
+                    <a href="https://www.tiktok.com/@lesphenatresdelartois?_t=ZN-8vLGTpttruQ&_r=1" target="_blank" className="group inline-flex items-center gap-2 text-2xl hover:text-red">
                         <Image
                             src="/icons/Mask_tiktok.webp"
                             width={50}
