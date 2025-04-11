@@ -13,13 +13,24 @@ export default function FormContact() {
         e.preventDefault()
         setIsSubmitting(true)
         
+        const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+        const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+        const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    
+        if (!serviceId || !templateId || !publicKey) {
+            console.error('EmailJS configuration is missing')
+            alert('Erreur de configuration du service d\'envoi d\'email')
+            setIsSubmitting(false)
+            return
+        }
+        
         try {
             if (form.current) {
                 await emailjs.sendForm(
-                    'YOUR_SERVICE_ID', // Remplacer par votre Service ID
-                    'YOUR_TEMPLATE_ID', // Remplacer par votre Template ID
+                    serviceId,
+                    templateId,
                     form.current,
-                    'YOUR_PUBLIC_KEY' // Remplacer par votre Public Key
+                    publicKey
                 );
                 alert('Message envoyé avec succès!')
                 resetForm()
@@ -31,7 +42,6 @@ export default function FormContact() {
             setIsSubmitting(false)
         }
     }
-
     const handleInputChange = (field: string, value: string) => {
         setFormData({ [field]: value });
     };
