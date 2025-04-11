@@ -19,7 +19,7 @@ export default function InformationsSection() {
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Horaires</h3>
                         <p className="font-semibold">
-                            Atelier enfants
+                            Atelier enfants à partir de 7 ans
                         </p>
                         <p className="text-gray-700">
                             1 mercredi sur 2 de 17h30 à 19h00<br />
@@ -38,8 +38,8 @@ export default function InformationsSection() {
                         <h3 className="text-xl font-semibold mb-2">Cotisation annuelle</h3>
                         <p className="text-gray-700">
                             50 € tarif normal<br />
-                            30 € enfants/étudiants<br />
-                            {`40€ demandeurs d'emplois/personnes en situation de handicap/retraités`}
+                            30 € enfants/étudiants avec justificatif<br />
+                            {`40€ demandeurs d'emplois/personnes en situation de handicap/retraités avec justificatif`}
                         </p>
                     </div>
 
@@ -80,7 +80,8 @@ export default function InformationsSection() {
                     <h2 className="text-4xl text-red font-bold mb-4 font-dancing">{`Un renseignement, une demande pour un spectacle ?`}</h2>
                     <FormContact />
                     <div className="mt-8">
-                        <h3 className="text-2xl text-red font-bold mb-4">{`Téléchargez nos fiches d'inscription`}</h3>
+                        <h3 className="text-2xl text-red font-bold">{`Téléchargez nos fiches d'inscription`}</h3>
+                        <p className=" mb-4">A remplir et à envoyer par email ou nous les porter directement lors d'un atelier</p>
                         <div className="flex flex-col space-y-4">
                             <p className="font-semibold">Pour adulte</p>
                             <a
