@@ -10,7 +10,7 @@ interface ContactForm {
 
 interface ContactStore {
     formData: ContactForm
-    setFormData: (field: keyof ContactForm, value: string) => void
+    setFormData: (newData: Partial<ContactForm>) => void
     resetForm: () => void
 }
 
@@ -24,11 +24,11 @@ const initialState: ContactForm = {
 
 export const useContactStore = create<ContactStore>((set) => ({
     formData: initialState,
-    setFormData: (field, value) => 
+    setFormData: (newData) => 
         set((state) => ({
             formData: {
                 ...state.formData,
-                [field]: value
+                ...newData
             }
         })),
     resetForm: () => set({ formData: initialState })

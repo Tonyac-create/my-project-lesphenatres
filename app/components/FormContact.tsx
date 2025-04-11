@@ -1,37 +1,28 @@
 'use client'
 
 import { useContactStore } from '../store/useContactStore'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
 
 export default function FormContact() {
     const { formData, setFormData, resetForm } = useContactStore()
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const form = useRef<HTMLFormElement>(null);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         setIsSubmitting(true)
         
         try {
-            const response = await fetch('/api/send', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    name: `${formData.firstName} ${formData.lastName}`,
-                    email: formData.email,
-                    phone: formData.phone,
-                    message: `
-                        ${formData.message}
-                    `
-                }),
-            })
-
-            if (response.ok) {
+            if (form.current) {
+                await emailjs.sendForm(
+                    'YOUR_SERVICE_ID', // Remplacer par votre Service ID
+                    'YOUR_TEMPLATE_ID', // Remplacer par votre Template ID
+                    form.current,
+                    'YOUR_PUBLIC_KEY' // Remplacer par votre Public Key
+                );
                 alert('Message envoyé avec succès!')
                 resetForm()
-            } else {
-                throw new Error('Erreur lors de l\'envoi')
             }
         } catch (error) {
             console.error('Error sending email:', error)
@@ -41,8 +32,12 @@ export default function FormContact() {
         }
     }
 
+    const handleInputChange = (field: string, value: string) => {
+        setFormData({ [field]: value });
+    };
+
     return (
-        <form onSubmit={handleSubmit} className="space-y-4 p-6">
+        <form ref={form} onSubmit={handleSubmit} className="space-y-4 p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
@@ -50,11 +45,12 @@ export default function FormContact() {
                     </label>
                     <input
                         type="text"
+                        name="firstName"
                         id="firstName"
-                        required
-                        className="mt-1 block w-full rounded-md border border-gray-400 shadow-sm focus:outline-none focus:border-[#C00A32] focus:ring-1 focus:ring-[#C00A32]"
                         value={formData.firstName}
-                        onChange={(e) => setFormData('firstName', e.target.value)}
+                        onChange={(e) => handleInputChange('firstName', e.target.value)}
+                        required
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                     />
                 </div>
                 <div>
@@ -63,63 +59,65 @@ export default function FormContact() {
                     </label>
                     <input
                         type="text"
+                        name="lastName"
                         id="lastName"
-                        required
-                        className="mt-1 block w-full rounded-md border border-gray-400 shadow-sm focus:outline-none focus:border-[#C00A32] focus:ring-1 focus:ring-[#C00A32]"
                         value={formData.lastName}
-                        onChange={(e) => setFormData('lastName', e.target.value)}
+                        onChange={(e) => handleInputChange('lastName', e.target.value)}
+                        required
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                     />
                 </div>
             </div>
-
             <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Email
                 </label>
                 <input
                     type="email"
+                    name="email"
                     id="email"
-                    required
-                    className="mt-1 block w-full rounded-md border border-gray-400 shadow-sm focus:outline-none focus:border-[#C00A32] focus:ring-1 focus:ring-[#C00A32]"
                     value={formData.email}
-                    onChange={(e) => setFormData('email', e.target.value)}
+                    onChange={(e) => handleInputChange('email', e.target.value)}
+                    required
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                 />
             </div>
-
             <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
                     Téléphone
                 </label>
                 <input
                     type="tel"
+                    name="phone"
                     id="phone"
-                    className="mt-1 block w-full rounded-md border border-gray-400 shadow-sm focus:outline-none focus:border-[#C00A32] focus:ring-1 focus:ring-[#C00A32]"
                     value={formData.phone}
-                    onChange={(e) => setFormData('phone', e.target.value)}
+                    onChange={(e) => handleInputChange('phone', e.target.value)}
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                 />
             </div>
-
             <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700">
                     Message
                 </label>
                 <textarea
+                    name="message"
                     id="message"
-                    required
                     rows={4}
-                    className="mt-1 block w-full rounded-md border border-gray-400 shadow-sm focus:outline-none focus:border-[#C00A32] focus:ring-1 focus:ring-[#C00A32]"
                     value={formData.message}
-                    onChange={(e) => setFormData('message', e.target.value)}
+                    onChange={(e) => handleInputChange('message', e.target.value)}
+                    required
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                 />
             </div>
-
-            <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-1/2 bg-red shadow-[0_0_10px_rgba(192,10,50,1)] hover:shadow-[0_0_20px_rgba(192,10,50,1)] focus:outline-none focus:border-[#C00A32] focus:ring-1 focus:ring-[#C00A32] hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded-md transition-colors disabled:opacity-50"
-            >
-                {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
-            </button>
+            <div>
+                <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red hover:bg-red/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red disabled:bg-gray-400"
+                >
+                    {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
+                </button>
+            </div>
         </form>
     )
 }
