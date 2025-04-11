@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FormContact from "../FormContact";
+import Link from "next/link";
 
 export default function InformationsSection() {
     return (
@@ -35,7 +36,10 @@ export default function InformationsSection() {
                     </div>
 
                     <div>
-                        <h3 className="text-xl font-semibold mb-2">Cotisation annuelle</h3>
+                        <h3 className="text-xl font-semibold mb-2">Cotisation annuelle (dès février 2025, profitez du tarif à moitié prix.)</h3>
+                        <p className="text-gray-700 mb-4 italic">
+                            Vous avez 4 séances gratuites avant inscription définitive
+                        </p>
                         <p className="text-gray-700">
                             50 € tarif normal<br />
                             30 € enfants/étudiants avec justificatif<br />
@@ -63,7 +67,30 @@ export default function InformationsSection() {
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Suivez-nous</h3>
                         <div className="flex space-x-4">
-                            <a href="https://www.facebook.com/lesphenatres" className="text-blue-600 hover:underline">Facebook</a>
+                            <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="hover:text-blue-700 inline-flex items-center">
+                                <Image
+                                    src="/icons/Mask_facebook.webp"
+                                    alt="Logo Facebook"
+                                    width={50}
+                                    height={50}
+                                    quality={100}
+                                    className="object-cover rounded-full mr-2 mb-3"
+                                />
+                                Facebook
+                            </Link>
+                        </div>
+                        <div className="flex space-x-4">
+                            <Link href="https://www.tiktok.com/@lesphenatresdelartois?_t=ZN-8vLGTpttruQ&_r=1" target="_blank" className="hover:text-blue-700 inline-flex items-center">
+                                <Image
+                                    src="/icons/Mask_tiktok.webp"
+                                    alt="Logo TikTok"
+                                    width={50}
+                                    height={50}
+                                    quality={100}
+                                    className="object-cover rounded-full mr-2"
+                                />
+                                TikTok
+                            </Link>
                         </div>
                     </div>
                 </div>

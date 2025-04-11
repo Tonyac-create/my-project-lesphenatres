@@ -6,15 +6,15 @@ export default function FriseSection() {
     return (
         <section className="relative p-8 md:px-28 md:py-11 tracking-wide">
             <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">{`Naissance d'un spectacle`}</h2>
-            <p>Un spectacle se construit comme un paysage : d’abord les lignes essentielles, les repères fixes, puis les détails viennent peupler l’espace. On travaille la matière du jeu, les rythmes, les silences, les présences. Tout s’affine, se tisse, jusqu’à trouver l’équilibre entre ce qui est dit, montré et ressenti.</p>
+            <p className='text-lg md:text-xl'>Un spectacle se construit comme un paysage : d’abord les lignes essentielles, les repères fixes, puis les détails viennent peupler l’espace. On travaille la matière du jeu, les rythmes, les silences, les présences. Tout s’affine, se tisse, jusqu’à trouver l’équilibre entre ce qui est dit, montré et ressenti.</p>
             
             {/* Timeline line - hidden on mobile, visible from md breakpoint */}
-            <div className="hidden md:block absolute left-[5%] lg:left-1/4 top-36 h-[87%] border-l-2 border-gray-400"></div>
+            <div className="hidden md:block mt-5 absolute left-[5%] lg:left-1/4 top-48 h-[87%] border-l-2 border-gray-400"></div>
 
             <div className="container mx-auto space-y-12 relative z-10 mt-12">
                 <Moment 
                     title="Répétition à l'italienne" 
-                    description="On déroule le texte comme une partition, de manière mécanique et régulière, pour vérifier les enchaînements et les éventuels trous de mémoire." 
+                    description="On fait circuler le texte à voix haute, tous au même rythme, pour vérifier ensemble les enchaînements et combler les éventuels trous de mémoire." 
                     image="/repetitionitalienne.webp" 
                 />
                 <Moment 

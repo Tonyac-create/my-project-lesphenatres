@@ -25,15 +25,33 @@ export default function Footer() {
                     </p>
                 </div>
             </div>
-            <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="hover:text-blue-700 inline-flex items-center">
-                <Image
-                    src="/icons/Facebook.png"
-                    alt="Logo Facebook"
-                    width={50}
-                    height={50}
-                />
-                Suivez nos actualités
-            </Link>
+            <div className="flex flex-col gap-4">
+                <p>Suivez nos actualités</p>
+                <div className="flex gap-4">
+                    <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="hover:text-blue-700 inline-flex items-center">
+                        <Image
+                            src="/icons/Mask_facebook.webp"
+                            alt="Logo Facebook"
+                            width={50}
+                            height={50}
+                            quality={100}
+                            className="object-cover rounded-full mr-2"
+                        />
+                        Facebook
+                    </Link>
+                    <Link href="https://www.tiktok.com/@lesphenatresdelartois?_t=ZN-8vLGTpttruQ&_r=1" target="_blank" className="hover:text-blue-700 inline-flex items-center">
+                        <Image
+                            src="/icons/Mask_tiktok.webp"
+                            alt="Logo TikTok"
+                            width={50}
+                            height={50}
+                            quality={100}
+                            className="object-cover rounded-full mr-2"
+                        />
+                        TikTok
+                    </Link>
+                </div>
+            </div>
             <div className="flex flex-col gap-4">
                 <Link href="/mentions" className="hover:text-red">Mentions légales</Link>
                 <p className="font-semibold">&copy;{`2025 Les Phénâtres de l'Artois. Tous droits reservés.`}</p>
