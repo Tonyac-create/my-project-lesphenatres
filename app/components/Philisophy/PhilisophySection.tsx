@@ -12,14 +12,30 @@ export default function PhilosophySection() {
                 <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
                     progresser
                 </span>
-                {` mais le point commun est qu’ils viennent tous pour profiter d’un bon moment et s’octroyer une bulle d’oxygène dans leur semaines. 
-                    Nous privilégions la confiance plutôt que les règles même si un règlement existe pour donner un cadre à notre association, 
+                {` mais le point commun est qu’ils viennent tous pour profiter d’un `}
+                <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
+                    bon moment
+                </span>
+                {` et s’octroyer une `}
+                <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
+                    bulle d’oxygène
+                </span>
+                {` dans leur semaines. Nous privilégions la `}
+                <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
+                    confiance
+                </span>
+                {` plutôt que les `}
+                <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
+                    règles
+                </span>
+                {` même si un règlement existe pour donner un cadre à notre association, 
                     nous y restons assez libres à l’intérieur.`}
                 <p className="text-lg md:text-xl mt-8">
                     {`Le but étant de laisser profiter les personnes voulant simplement s’amuser, en leur faisant découvrir de nouvelle choses, et en laissant les
-                autres progresser à leur rythme. Dans une séance même si nous n'aimons pas le jeu mis en place, on essaie de participer car cela peut inspirer
-                les copains, et même les animateurs font des jeux qu’il n’aime pas.`}
+                autres progresser à leur rythme. Lors d’une séance, chacun essaie de participer au jeu proposé, même si ce n’est pas son préféré, car cela permet 
+                de partager un bon moment ensemble, d’encourager les copains et de faire vivre le jeu. Les animateurs aussi jouent le jeu pour que tout le monde passe un bon moment.`}
                 </p>
+                <br />
                 {`Pourtant c’est avec cette méthode que nous réussissons à créer des histoires aussi `}
                 <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
                     formidable
@@ -31,13 +47,24 @@ export default function PhilosophySection() {
                 {` et surtout nous ne sommes jamais seuls sur scène. Nos animateurs sont soit formé à l’animation ou ont assez d’expérience pour prendre en main les ateliers.
                 Le théâtre est `}
                 <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
-                une grande famille 
+                    une grande famille
                 </span>
                 {` où chaque personne est là pour l’autre sur scène et en coulisse, c’est dans cette optique là
                 que nous préparons nos spectacles où chaque participant à un rôle à jouer et même ceux qui ne font pas le spectacle mais vienne 
-                nous regarder pour nous applaudir et nous soutenir. Et pour finir je dirais que l’imagination est le plus 
-                grand des atouts de l’Homme, dans de mauvaises mains elle peut être destructrice, mais dans de bonnes, elle permet de faire de grande chose
-                et notamment grandir et s'épanouir.`}
+                nous regarder pour nous applaudir et nous soutenir. Et pour finir je dirais que `}
+                <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
+                l’imagination
+                </span>
+                 {` est le plus grand des atouts de l’Homme, dans de mauvaises mains elle peut être destructrice, mais dans de bonnes, elle permet 
+                 de faire de grande chose et notamment `}
+                <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
+                grandir
+                </span>
+                {` et `}
+                <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
+                s'épanouir
+                </span>
+                {`.`}
             </p>
         </section>
     )
