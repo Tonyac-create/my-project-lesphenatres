@@ -18,7 +18,7 @@ export default function Atelier({ title, description, age, className, picture1, 
     const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
     return (
-        <article className={`flex items-center ${className} p-6 rounded-2xl h-[500px] relative overflow-hidden`}>
+        <article className={`flex flex-col items-center ${className} p-6 rounded-2xl h-[500px] relative overflow-hidden`}>
             <div className="w-1/2 pr-8">
                 <h3 className="text-2xl font-bold">{title}</h3>
                 <p className="text-gray-500 mb-3.5">{age}</p>
@@ -46,7 +46,7 @@ export default function Atelier({ title, description, age, className, picture1, 
                         height={500}
                         alt={title}
                         quality={100}
-                        className="object-cover absolute top-52 right-32 rounded-lg shadow-lg"
+                        className="object-cover absolute top-52 right-32 rounded-lg shadow-lg hidden lg:flex"
                     />
                 </div>
             </div>

@@ -6,7 +6,7 @@ export const atelier = [
         description: "Jeux, créativité, expression, imaginaire...",
         picture1: "/enfant_atelier.jpg",
         picture2: "/ateliers/enfant/enfant_3.webp",
-        className: "",
+        className: "lg:flex-row",
         photos: [
             '/ateliers/enfant/enfant_1.webp',
             '/ateliers/enfant/enfant_2.webp',
@@ -21,7 +21,7 @@ export const atelier = [
         description: "Prendre le temps, explorer, partager, créer...",
         picture1: "/ateliers/adulte/adulte_1.webp",
         picture2: "/ateliers/adulte/adulte_4.webp",
-        className: "flex-row-reverse",
+        className: "lg:flex-row-reverse",
         photos: [
             '/ateliers/adulte/adulte_1.webp',
             '/ateliers/adulte/adulte_2.webp',
