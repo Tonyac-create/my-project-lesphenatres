@@ -12,6 +12,11 @@ export const atelier = [
             '/ateliers/enfant/enfant_2.webp',
             '/ateliers/enfant/enfant_3.webp',
             '/ateliers/enfant/enfant_4.webp',
+            '/ateliers/enfant/enfant_5.webp',
+            '/ateliers/enfant/enfant_6.webp',
+            '/ateliers/enfant/enfant_7.webp',
+            '/ateliers/enfant/enfant_8.webp',
+            '/ateliers/enfant/enfant_9.webp',
         ]
     },
     {
@@ -29,6 +34,9 @@ export const atelier = [
             '/ateliers/adulte/adulte_4.webp',
             '/ateliers/adulte/adulte_5.webp',
             '/ateliers/adulte/adulte_6.webp',
+            '/ateliers/adulte/adulte_7.webp',
+            '/ateliers/adulte/adulte_8.webp',
+            '/ateliers/adulte/adulte_9.webp',
         ]
     },
 ]
