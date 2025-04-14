@@ -13,7 +13,7 @@ export default function InformationsSection() {
                         <p className="text-gray-700">
                             {`Office culturel d'Arras`}<br />
                             2, rue de la Douizième<br />
-                            6200 Arras
+                            62000 Arras
                         </p>
                     </div>
 
@@ -87,9 +87,22 @@ export default function InformationsSection() {
                                     width={50}
                                     height={50}
                                     quality={100}
-                                    className="object-cover rounded-full mr-2"
+                                    className="object-cover rounded-full mr-2 mb-3"
                                 />
                                 TikTok
+                            </Link>
+                        </div>
+                        <div className="flex space-x-4">
+
+                            <Link href="https://www.instagram.com/lesphenatresdelartois/?igsh=MXZwY21xeXZhOW80Ng%3D%3D#" target="_blank" className="hover:text-blue-700 inline-flex items-center">
+                                <Image
+                                    src="/icons/Mask_Instagram.png"
+                                    width={50}
+                                    height={50}
+                                    alt="Tiktok"
+                                    className="object-cover rounded-full mr-2"
+                                />
+                                Instagram
                             </Link>
                         </div>
                     </div>

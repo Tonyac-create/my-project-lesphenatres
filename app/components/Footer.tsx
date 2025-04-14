@@ -50,6 +50,16 @@ export default function Footer() {
                         />
                         TikTok
                     </Link>
+                    <Link href="https://www.instagram.com/lesphenatresdelartois/?igsh=MXZwY21xeXZhOW80Ng%3D%3D#" target="_blank" className="hover:text-blue-700 inline-flex items-center">
+                    <Image
+                        src="/icons/Mask_Instagram.png"
+                        width={50}
+                        height={50}
+                        alt="Tiktok"
+                        className="object-cover rounded-full mr-2"
+                    />
+                    Instagram
+                </Link>
                 </div>
             </div>
             <div className="flex flex-col gap-4">
