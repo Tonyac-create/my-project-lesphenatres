@@ -50,7 +50,7 @@ export default function InformationsSection() {
                     <div>
                         <h3 className="text-xl font-semibold mb-2">{`Conditions d'inscription`}</h3>
                         <ul className="list-disc list-inside text-gray-700">
-                            <li>À partir de 16 ans</li>
+                            <li>À partir de 7 ans</li>
                             <li>{`Pas d'expérience requise`}</li>
                             <li>Motivation & bonne humeur indispensables</li>
                         </ul>
