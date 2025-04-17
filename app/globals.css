@@ -66,7 +66,7 @@ body {
 @keyframes slideFromLeft {
   from {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-100%);
   }
 
   to {
@@ -81,8 +81,11 @@ body {
 }
 
 .slide-from-left {
-  opacity: 0;
-  transform: translateX(-100px);
+  animation: slideFromLeft 1s ease-out forwards;
+}
+
+.slide-delay-300 {
+  animation-delay: 300ms;
 }
 
 .slide-from-right.visible {
@@ -90,7 +93,7 @@ body {
 }
 
 .slide-from-left.visible {
-  animation: slideFromLeft 0.8s ease-out forwards;
+  animation: slideFromLeft 1s ease-out forwards;
 }
 
 @keyframes curtainLeft {

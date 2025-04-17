@@ -9,22 +9,11 @@ export default function SectionAtelier() {
             <p className="text-lg md:text-xl mb-5">Ici, tout le monde peut trouver sa place ! Enfants ou adultes, venez découvrir un atelier qui vous ressemble.</p>
             <div className="flex flex-col justify-center gap-16">
                 {atelier.map((atelier) => (
-                    // <CardAtelier
-                    //     key={atelier.id}
-                    //     icon={atelier.icon}
-                    //     title={atelier.name}
-                    //     age={atelier.age}
-                    //     description={atelier.description}
-                    //     className={atelier.className}
-                    //     photos={atelier.photos}
-                    // />
                     <Atelier
                         key={atelier.id}
                         title={atelier.name}
                         description={atelier.description}
                         age={atelier.age}
-                        picture1={atelier.picture1}
-                        picture2={atelier.picture2}
                         photos={atelier.photos}
                         className={atelier.className}
                     />

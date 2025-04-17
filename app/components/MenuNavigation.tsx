@@ -10,6 +10,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
     { name: "Accueil", href: "/" },
     { name: "Notre philosophie", href: "/philosophy" },
     { name: "Ateliers / spectacles", href: "/projets" },
+    { name: "À l'affiche", href: "/news" },
     { name: "Infos pratiques/Contact", href: "/contact" },
   ];
 
@@ -19,7 +20,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
     <>
       {navigation.map((item) => (
         <li key={item.name} onClick={() => setIsMenuOpen(false)}>
-          <Link href={item.href} className={`hover:text-red ${pathname === item.href ? 'text-red' : 'text-black'}`}>{item.name}</Link>
+          <Link href={item.href} className={`tracking-wide hover:text-red ${pathname === item.href ? 'text-red' : 'text-black'}`}>{item.name}</Link>
         </li>
       ))}
     </>
