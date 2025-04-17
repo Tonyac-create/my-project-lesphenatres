@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
     return (
@@ -17,6 +18,16 @@ export default function HeroSection() {
                         {`La troupe est en mouvement !`}
                     </h2>
                 </div>
+                <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="flex flex-row mt-12 text-xl text-white gap-3 items-center">
+                    <Image
+                        src="/icons/pouce_facebook.png"
+                        width={50}
+                        height={50}
+                        alt=""
+                        className="animate-bounce"
+                    />
+                    Liker notre page pour savoir ou et quand voir nos spectacles !
+                </Link>     
             </div>
         </section>
     );
