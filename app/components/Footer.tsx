@@ -10,7 +10,7 @@ export default function Footer() {
                     alt="Logo Les Phénâtres"
                     width={100}
                     height={100}
-                    className="object-cover xl:w-48 xl:h-48"
+                    className="object-cover xl:w-36 xl:h-36"
                 />
                 <div className="flex flex-col items-start">
                     <h2>
