@@ -39,6 +39,7 @@ export default function BackToTopButton() {
                         width={30}
                         height={30}
                         alt='Retour en haut de page'
+                        className='w-6 h-6 md:w-8 md:h-8'
                     />
                 </button>
             )}
