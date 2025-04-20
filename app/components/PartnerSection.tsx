@@ -14,7 +14,7 @@ export default function PartnerSection() {
     }, [observeElements]);
     return (
         <section className=" mt-16 p-8 md:px-28">
-            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Merci à nos partenaires</h2>
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">Merci à nos partenaires</h2>
             <div className="flex flex-wrap justify-center items-center gap-7 slide-from-left">
                 <Link href="https://www.arras.fr/" target="_blank" className="partner-image" title="Voir le site">
                     <Image
@@ -24,7 +24,7 @@ export default function PartnerSection() {
                         priority={true}
                         quality={100}
                         alt="Ville d'Arras"
-                        className="object-cover object-center"
+                        className="object-cover"
                     />
                 </Link>
                 <Link href="https://www.officeculturelarras.fr/page/1690940-accueil" target="_blank" className="partner-image" title="Voir le site">
@@ -35,7 +35,7 @@ export default function PartnerSection() {
                         priority={true}
                         quality={100}
                         alt="Office Culturel d'Arras"
-                        className="object-cover object-center"
+                        className="object-cover"
                     />
                 </Link>
                 <Link
@@ -50,7 +50,7 @@ export default function PartnerSection() {
                         priority={true}
                         quality={100}
                         alt="Forum des associations d'Arras"
-                        className="object-cover object-center"
+                        className="object-cover"
                     />
                 </Link>
                 <Link href="https://reptileblade.wixsite.com/reptileblade" target="_blank" className="partner-image" title="Voir le site">
@@ -61,7 +61,7 @@ export default function PartnerSection() {
                         priority={true}
                         quality={100}
                         alt="ReptilBlade"
-                        className="object-cover object-center"
+                        className="object-cover"
                     />
                 </Link>
                 <Link href="https://www.free-dev.fr/" target="_blank" className="partner-image" title="Voir le site">
@@ -72,7 +72,7 @@ export default function PartnerSection() {
                         priority={true}
                         quality={100}
                         alt="Free-dev"
-                        className="object-cover object-center"
+                        className="object-cover"
                     />
                 </Link>
             </div>

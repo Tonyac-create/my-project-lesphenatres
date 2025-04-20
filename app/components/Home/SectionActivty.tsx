@@ -25,7 +25,7 @@ export default function SectionActivty() {
                     <p className="text-lg md:text-xl xl:text-2xl">{`Séances d'improvisations, travail sur textes et pièce écrite, réalisée, mise en scène et jouée par notre troupe !`}</p>
                 </div>
                 <Image
-                    src="/atelier_adulte.jpg"
+                    src="/atelier_adulte.webp"
                     width={500}
                     height={500}
                     alt="Atelier théâtre adultes"
@@ -34,7 +34,7 @@ export default function SectionActivty() {
             </div>
             <div className="relative w-3/4 mt-[-335px] mb-8 slide-from-left">
                 <Image
-                    src="/enfant_atelier.jpg"
+                    src="/enfant_atelier.webp"
                     width={500}
                     height={500}
                     alt="Atelier théâtre enfants"

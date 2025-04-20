@@ -32,7 +32,7 @@ export default function News() {
                 </Link>
                 <Link href="https://www.instagram.com/lesphenatresdelartois/?igsh=MXZwY21xeXZhOW80Ng%3D%3D#" target="_blank" className="group inline-flex items-center gap-2 text-xl hover:text-red">
                     <Image
-                        src="/icons/Mask_Instagram.png"
+                        src="/icons/Mask_Instagram.webp"
                         width={100}
                         height={100}
                         alt="Tiktok"
