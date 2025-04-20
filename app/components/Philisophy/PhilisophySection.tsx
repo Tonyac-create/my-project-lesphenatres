@@ -1,8 +1,8 @@
 export default function PhilosophySection() {
     return (
-        <section className="flex flex-col mb-12 p-8 md:px-28 md:py-11 tracking-wide">
-            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Notre philosophie</h2>
-            <p className="text-lg md:text-xl">
+        <section className="flex flex-col mb-12 px-8 md:px-28 md:py-11 tracking-wide">
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">Notre philosophie</h2>
+            <p className="text-lg md:text-xl xl:text-2xl">
                 {`L’intérêt d’un loisir, est de se faire plaisir, c’est ce à quoi nous inspirons : venir comme nous sommes et surtout tel que nous sommes.
                 Les adhérents qui viennent à nos ateliers ont chacun leurs objectifs certains pour `}
                 <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
@@ -30,7 +30,7 @@ export default function PhilosophySection() {
                 </span>
                 {` même si un règlement existe pour donner un cadre à notre association, 
                     nous y restons assez libres à l’intérieur.`}
-                <p className="text-lg md:text-xl mt-8">
+                <p className="text-lg md:text-xl xl:text-2xl mt-8">
                     {`Le but étant de laisser profiter les personnes voulant simplement s’amuser, en leur faisant découvrir de nouvelle choses, et en laissant les
                 autres progresser à leur rythme. Lors d’une séance, chacun essaie de participer au jeu proposé, même si ce n’est pas son préféré, car cela permet 
                 de partager un bon moment ensemble, d’encourager les copains et de faire vivre le jeu. Les animateurs aussi jouent le jeu pour que tout le monde passe un bon moment.`}

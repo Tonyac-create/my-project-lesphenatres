@@ -1,19 +1,19 @@
 export default function HistorySection() {
     return (
-        <section className="flex flex-col mt-16 p-8 md:px-28 md:py-11 tracking-wide">
-            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Notre histoire</h2>
-            <p className="text-lg md:text-xl">
+        <section className="flex flex-col my-9 px-8 md:px-28 md:py-11 tracking-wide">
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">Notre histoire</h2>
+            <p className="text-lg md:text-xl xl:text-2xl">
                 {`Notre association a été créée en 2020, au tristement célèbre moment de la pandémie du covid 19, elle a été créée
                  par un groupe de personnes voulant juste faire du théâtre et en partageant cette passion au plus grand nombre,
                   tout en restant contrairement à une expérience précédente. Le nom de l'association “Les phénâtres de l'Artois”
                    est un mélange des 2 mots. `}          </p>
-            <p className="text-lg md:text-xl">
+            <p className="text-lg md:text-xl xl:text-2xl">
                 <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
                     Phénix
                 </span>
                 {` tout d’abord pour le côté résurrection de quelque chose, un nouveau cycle, une nouvelle aventure. `}
             </p>
-            <p className="text-lg md:text-xl">
+            <p className="text-lg md:text-xl xl:text-2xl">
                 {`Ensuite, `}
                 <span className="bg-gradient-to-r from-purple-600 to-blue-500 inline-block text-transparent bg-clip-text font-semibold">
                     théâtre
@@ -23,7 +23,7 @@ export default function HistorySection() {
                     Phénâtres
                 </span>
             </p>
-            <p>
+            <p className="text-lg md:text-xl xl:text-2xl">
                 {`Elle est basée à l'Office Culturel d’Arras dans le Pas de Calais, qui est pour nous un soutien plus qu’essentiel au même titre que 
                  la ville qui prête les locaux à cette structure ce qui nous donne accès à un panel de services immense. Notre association a pour but 
                  de faire découvrir le `}

@@ -14,7 +14,7 @@ export default function ValuesSection() {
 
     return (
         <section className="flex flex-col mb-12 p-8 md:px-28 md:py-11 tracking-wide">
-            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Nos valeurs fondamentales</h2>
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">Nos valeurs fondamentales</h2>
             <div className="flex flex-wrap gap-12 mt-5">
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-1 opacity-0">
                     <Image
@@ -24,7 +24,7 @@ export default function ValuesSection() {
                         alt=""
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
-                    <p className="text-xl mt-3 text-center">{`Jouer, vibrer, transmettre des émotions`}</p>
+                    <p className="text-lg md:text-xl xl:text-2xl mt-3 text-center">{`Jouer, vibrer, transmettre des émotions`}</p>
                 </div>
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-2 opacity-0">
                     <Image
@@ -34,7 +34,7 @@ export default function ValuesSection() {
                         alt=""
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
-                    <p className="text-xl mt-3 text-center">Un théâtre accessible et inclusif</p>
+                    <p className="text-lg md:text-xl xl:text-2xl mt-3 text-center">Un théâtre accessible et inclusif</p>
                 </div>
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-3 opacity-0">
                     <Image
@@ -44,7 +44,7 @@ export default function ValuesSection() {
                         alt=""
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
-                    <p className="text-xl mt-3 text-center">Raconter des histoires autrement</p>
+                    <p className="text-lg md:text-xl xl:text-2xl mt-3 text-center">Raconter des histoires autrement</p>
                 </div>
                 <div className="flex flex-col w-[350px] justify-center items-center flip-card flip-4 opacity-0">
                     <Image
@@ -54,7 +54,7 @@ export default function ValuesSection() {
                         alt=""
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
-                    <p className="text-xl mt-3 text-center">Un lien unique entre acteurs et spectateurs</p>
+                    <p className="text-lg md:text-xl xl:text-2xl mt-3 text-center">Un lien unique entre acteurs et spectateurs</p>
                 </div>
             </div>
         </section>
