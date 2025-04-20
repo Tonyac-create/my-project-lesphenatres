@@ -6,7 +6,6 @@ export default function TheatreParcours() {
     const stepsRef = useRef([]);
 
     useEffect(() => {
-        // Simple intersection observer for animations
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -19,7 +18,6 @@ export default function TheatreParcours() {
             { threshold: 0.1 }
         );
 
-        // Observe all steps
         const elements = document.querySelectorAll('.step-card');
         elements.forEach((el) => observer.observe(el));
 
@@ -27,23 +25,23 @@ export default function TheatreParcours() {
     }, []);
 
     return (
-        <div className="bg-stone-50 min-h-screen">
-            <header className="bg-red text-white py-12 px-4 text-center">
-                <h1 className="text-4xl font-bold mb-4 font-dancing">Les Deux Chemins du Théâtre</h1>
-                <p className="text-xl max-w-3xl mx-auto">
+        <section className="bg-stone-50 min-h-screen">
+            <div className="bg-red text-white py-12 px-4 text-center">
+                <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold mb-4 font-dancing">Les Deux Chemins du Théâtre</h2>
+                <p className="text-lg md:text-xl xl:text-2xl max-w-3xl mx-auto">
                     Dans notre association, nous avons un circuit bien défini pour chaque activité. Les ateliers sont liés à nos spectacles d’improvisation, tandis que nos projets parallèles suivent un parcours différent — c’est ce que nous allons vous expliquer un peu plus bas.
-                    Les étapes générales restent globalement les mêmes, mais dans la mise en œuvre… c’est une autre planche. Vous avez la réf 😄
+                    Les étapes générales restent globalement les mêmes, mais dans la mise en œuvre… c’est une autre planche. Vous avez la réf 
                 </p>
-            </header>
+            </div>
 
             <div className="container mx-auto px-4 py-16">
                 {/* Titles for both paths */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                     <div className="text-center">
-                        <h2 className="text-2xl font-bold text-slate-800">Parcours Ateliers & Impro</h2>
+                        <h3 className="text-2xl font-bold text-slate-800">Parcours Ateliers & Impro</h3>
                     </div>
                     <div className="text-center">
-                        <h2 className="text-2xl font-bold text-slate-800">Parcours Projets Théâtraux</h2>
+                        <h3 className="text-2xl font-bold text-slate-800">Parcours Projets Théâtraux</h3>
                     </div>
                 </div>
 
@@ -56,31 +54,19 @@ export default function TheatreParcours() {
                     {/* Steps */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
                         {/* Left Path - Step 1 */}
-                        <div className="relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out">
+                        <div className="order-1 md:order-1 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out">
                             <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
                                 <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
                                 <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
                                 <h3 className="text-xl font-bold mb-4 text-slate-800">Formation du Groupe et Premiers Pas sur Scène</h3>
-                                <p className="mb-3">Nous avons une première étape où l’on accueille tout le monde, petits et grands. On leur présente différents jeux théâtraux ainsi que diverses techniques que nous utilisons.</p>
-                                <p className="mb-3">C’est aussi le moment où le groupe se forme, trouve ses marques, et apprend à développer ce qu’on appelle la cohésion de groupe — une base indispensable pour la création des futurs spectacles.</p>
-                                <p className="font-semibold">Durée : Environ 4 mois, de septembre à décembre. Mais nous restons ouverts à l’accueil de nouveaux participants jusqu’en mars, avec une adhésion préférentielle.
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* Right Path - Step 1 */}
-                        <div className="relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-100">
-                            <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
-                                <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
-                                <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
-                                <h3 className="text-xl font-bold mb-4 text-slate-800">Création du Projet et Élaboration du Texte</h3>
-                                <p className="mb-3">Nous écoutons le projet et voyons ensemble où et comment nous pouvons intervenir. En parallèle, le travail d'écriture commence afin de composer un texte.</p>
-                                <p className="mb-3">Dans le cas où un texte existe déjà, nous le mettons à disposition de notre interlocuteur pour en discuter ensemble et vérifier s'il convient au projet.</p>
+                                <p className="mb-3">Nous avons une première étape où l'on accueille tout le monde, petits et grands. On leur présente différents jeux théâtraux ainsi que diverses techniques que nous utilisons.</p>
+                                <p className="mb-3">C'est aussi le moment où le groupe se forme, trouve ses marques, et apprend à développer ce qu'on appelle la cohésion de groupe — une base indispensable pour la création des futurs spectacles.</p>
+                                <p className="font-semibold">Durée : Environ 4 mois, de septembre à décembre. Mais nous restons ouverts à l'accueil de nouveaux participants jusqu'en mars, avec une adhésion préférentielle.</p>
                             </div>
                         </div>
 
                         {/* Left Path - Step 2 */}
-                        <div className="relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-200 mt-16">
+                        <div className="order-2 md:order-3 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-200 mt-8 md:mt-16">
                             <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
                                 <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
                                 <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
@@ -91,8 +77,35 @@ export default function TheatreParcours() {
                             </div>
                         </div>
 
+                        {/* Left Path - Step 3 */}
+                        <div className="order-3 md:order-5 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-400 mt-8 md:mt-16">
+                            <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
+                                <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                                <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
+                                <h3 className="text-xl font-bold mb-4 text-slate-800">Répétitions Finales et Préparation à la Restitution</h3>
+                                <p className="mb-3">Dernière ligne droite, c'est parti : faites chauffer vos voix et concentrez-vous à fond !
+                                    Les trois derniers mois, environ, sont consacrés à la restitution des ateliers : un moment où l'on peut inviter sa famille,
+                                    ses amis, et parfois même des partenaires ou des personnes intéressées pour accueillir nos spectacles dans leur structure.</p>
+                                <p className="mb-3">Dans le cadre des restitutions pour enfants, nous préférons limiter le public à la famille et,
+                                    éventuellement, aux amis (en accord avec les parents), afin de ne pas trop stresser nos jeunes comédiens.
+                                    Parce que monter sur scène, ça peut faire peur… alors imaginez-vous à leur place !</p>
+                                <p className="font-semibold">Calendrier : Restitution du groupe enfants fin mai, adultes début juin.</p>
+                            </div>
+                        </div>
+
+                        {/* Right Path - Step 1 */}
+                        <div className="order-4 md:order-2 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-100">
+                            <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
+                                <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                                <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
+                                <h3 className="text-xl font-bold mb-4 text-slate-800">Création du Projet et Élaboration du Texte</h3>
+                                <p className="mb-3">Nous écoutons le projet et voyons ensemble où et comment nous pouvons intervenir. En parallèle, le travail d'écriture commence afin de composer un texte.</p>
+                                <p className="mb-3">Dans le cas où un texte existe déjà, nous le mettons à disposition de notre interlocuteur pour en discuter ensemble et vérifier s'il convient au projet.</p>
+                            </div>
+                        </div>
+
                         {/* Right Path - Step 2 */}
-                        <div className="relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-300 mt-16">
+                        <div className="order-5 md:order-4 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-300 mt-8 md:mt-16">
                             <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
                                 <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
                                 <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
@@ -103,28 +116,8 @@ export default function TheatreParcours() {
                             </div>
                         </div>
 
-                        {/* Left Path - Step 3 */}
-                        <div className="relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-400 mt-16">
-                            <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
-                                <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
-                                <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
-                                <h3 className="text-xl font-bold mb-4 text-slate-800">Répétitions Finales et Préparation à la Restitution</h3>
-                                <p className="mb-3">Dernière ligne droite, c’est parti : faites chauffer vos voix et concentrez-vous à fond !
-                                    Les trois derniers mois, environ, sont consacrés à la restitution des ateliers : un moment où l’on peut inviter sa famille,
-                                    ses amis, et parfois même des partenaires ou des personnes intéressées pour accueillir nos spectacles dans leur structure.</p>
-                                <p className="mb-3">Dans le cadre des restitutions pour enfants, nous préférons limiter le public à la famille et,
-                                    éventuellement, aux amis (en accord avec les parents), afin de ne pas trop stresser nos jeunes comédiens.
-                                    Parce que monter sur scène, ça peut faire peur… alors imaginez-vous à leur place !</p>
-                                <p className="mb-3">Nous construisons la restitution avec les personnes volontaires : l’une des clés de la réussite de ce spectacle,
-                                    c’est l’implication de chacun. On travaille les derniers détails, on approfondit les éléments demandés par les participants
-                                    — se sont vraiment nos adhérents qui créent leur spectacle de A à Z, notamment pour le groupe des adultes.</p>
-                                <p className="mb-3">Pour les enfants, nous proposons une trame plus large, afin d’éviter que cela parte dans tous les sens, tout en gardant notre cadre ludique et structuré.</p>
-                                <p className="font-semibold">Calendrier : Restitution du groupe enfants fin mai, adultes début juin.</p>
-                            </div>
-                        </div>
-
                         {/* Right Path - Step 3 */}
-                        <div className="relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-500 mt-16">
+                        <div className="order-6 md:order-6 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-500 mt-8 md:mt-16">
                             <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
                                 <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
                                 <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
@@ -132,8 +125,7 @@ export default function TheatreParcours() {
                                 <p className="mb-3">Une fois que le texte est relativement bien intégré et que la lecture devient fluide, on commence la mise en scène.</p>
                                 <p className="mb-3">Le but est de continuer à lire son texte au début, pour progressivement s'en détacher, tout en y ajoutant petit à petit les éléments essentiels : déplacements, intonations, intentions, etc.</p>
                                 <p className="mb-3">Le spectacle prend alors plus de forme, et tout commence à se mettre en place peu à peu.
-                                    Il n’y a pas vraiment de durée précise pour cette étape : tout dépend de la capacité des comédiens à apprendre leur texte et de leur assiduité.
-                                    Nous essayons de répéter une fois par semaine, le samedi après les ateliers.</p>
+                                    Il n'y a pas vraiment de durée précise pour cette étape : tout dépend de la capacité des comédiens à apprendre leur texte et de leur assiduité.</p>
                                 <p className="font-semibold">Organisation : Répétitions hebdomadaires le samedi après les ateliers.</p>
                             </div>
                         </div>
@@ -160,6 +152,6 @@ export default function TheatreParcours() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

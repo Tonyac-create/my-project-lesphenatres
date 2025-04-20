@@ -7,10 +7,9 @@ interface AtelierProps {
     age: string;
     description: string;
     photos: string[];
-    className?: string;
 }
 
-export default function Atelier({ title, age, description, photos, className }: AtelierProps) {
+export default function Atelier({ title, age, description, photos }: AtelierProps) {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
     const nextPhoto = () => {
@@ -22,13 +21,13 @@ export default function Atelier({ title, age, description, photos, className }: 
     };
 
     return (
-        <article className={`flex flex-col items-center ${className} gap-16 p-6 rounded-2xl h-[500px] relative overflow-hidden`}>
-            <div className="w-1/2 pr-8">
+        <article className={`flex flex-col gap-16 gap-16 p-6 rounded-2xl lg:w-[500px] h-[500px] relative overflow-hidden`}>
+            <div className="pr-8">
                 <h3 className="text-2xl font-bold">{title}</h3>
                 <p className="text-gray-500 mb-3.5">{age}</p>
                 <p>{description}</p>
             </div>
-            <div className="relative w-1/2 h-full">
+            <div className="relative lg:w-full h-full">
                 <div className="relative h-full w-full">
                     {photos && photos.length > 0 && (
                         <Image

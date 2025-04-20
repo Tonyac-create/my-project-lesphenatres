@@ -4,7 +4,6 @@ export const atelier = [
         name: "Pour les petits curieux",
         age: "à partir de 7 ans",
         description: "Jeux, créativité, expression, imaginaire...",
-        className: "lg:flex-row",
         photos: [
             '/ateliers/enfant/enfant_1.webp',
             '/ateliers/enfant/enfant_2.webp',
@@ -22,7 +21,6 @@ export const atelier = [
         name: "Pour les grands créatifs",
         age: "à partir de 16 ans",
         description: "Prendre le temps, explorer, partager, créer...",
-        className: "lg:flex-row-reverse",
         photos: [
             '/ateliers/adulte/adulte_1.webp',
             '/ateliers/adulte/adulte_2.webp',
