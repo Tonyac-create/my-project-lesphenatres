@@ -17,8 +17,8 @@ export default function SectionActivty() {
     }, [observeElements]);
 
     return (
-        <section className="relative flex flex-col items-start gap-6 p-8 md:px-28 md:py-11 tracking-wide">
-            <h3 className="font-dancing text-red text-3xl md:text-5xl mb-3.5 font-semibold flex mr-auto">Nos activités</h3>
+        <section className="relative flex flex-col items-start gap-6 my-9 p-8 md:px-28 md:py-11 tracking-wide">
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-3.5 font-semibold flex mr-auto">Nos activités</h2>
             <div className="relative w-3/4 slide-from-right">
                 <div className="p-6 bg-red text-white">
                     <h2 className="text-2xl font-bold">Ateliers Adultes</h2>

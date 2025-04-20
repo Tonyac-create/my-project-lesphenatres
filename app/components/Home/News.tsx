@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function News() {
     return (
-        <section className="flex flex-col gap-6 px-8 md:px-28 md:py-11 tracking-wide">
-            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-3.5  font-semibold flex mr-auto">{`Suivez nous sur les réseaux sociaux`}</h2>
+        <section className="flex flex-col gap-6 mb-9 px-8 md:px-28 md:pb-11 tracking-wide">
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl font-semibold flex mr-auto">{`Suivez nous sur les réseaux sociaux`}</h2>
             <div className="flex flex-col gap-2">
                 <p className="text-lg md:text-xl xl:text-2xl">{`Retrouvez les moments forts de la troupe, des répétitions aux grandes premières.`}</p>
                 <p className="text-lg md:text-xl xl:text-2xl">{`Rejoignez-nous sur les réseaux pour ne rien manquer du spectacle !`}</p>

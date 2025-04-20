@@ -3,26 +3,28 @@ import Button from "../Button";
 
 export default function SectionAbout() {
     return (
-        <section className="flex flex-col md:flex-row items-center my-9 p-8 md:px-28 md:py-11 tracking-wide">
-            <article className="lg:w-[50%] text-black p-5 mb-12 rounded-md">
-                <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-3.5 font-semibold">{`Comment est née l'association ?`}</h2>
-                <div className="lg:hidden">
-                    <Image
-                        src="/fond_scene.webp"
-                        width={500}
-                        height={500}
-                        quality={100}
-                        alt="Scène avec projecteurs"
-                        className="w-full h-full object-cover mb-8 rounded-xl drop-shadow-[3px_5px_5px_rgba(0,0,0,0.5)]"
-                    />
-                </div>
-                <p className="text-lg md:text-xl xl:text-2xl">{`Notre association a été créée en 2020, au tristement célèbre moment de la pandémie
+        <section className="my-9 p-8 md:px-28 md:pt-11 tracking-wide">
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 lg:mb-7 font-semibold">{`Comment est née l'association ?`}</h2>
+            <article className="flex flex-col-reverse lg:flex-row gap-5 text-black mb-12 rounded-md">
+                <div className="lg:w-1/2">
+                    <p className="text-lg md:text-xl xl:text-2xl">{`Notre association a été créée en 2020, au tristement célèbre moment de la pandémie
                  du covid 19, elle a été créée par un groupe de personnes voulant juste faire du théâtre et en partageant cette passion 
                  au plus grand nombre, tout en restant contrairement à une expérience précédente.`}</p>
-                <p className="mt-3 mb-10 text-lg md:text-xl xl:text-2xl">{`Le nom de l'association “Les phénâtres de l'Artois” est un mélange des 2 mots...`}</p>
-                <Button href="/philosophy" variant="secondary">{`Toute l'histoire`}</Button>
+                    <p className="mt-3 mb-10 text-lg md:text-xl xl:text-2xl">{`Le nom de l'association “Les phénâtres de l'Artois” est un mélange des 2 mots...`}</p>
+                    <Button href="/philosophy" variant="secondary">{`Toute l'histoire`}</Button>
+                </div>
+                 <div className="lg:w-1/2">
+                     <Image
+                         src="/fond_scene.webp"
+                         width={500}
+                         height={500}
+                         quality={100}
+                         alt="Scène avec projecteurs"
+                         className="w-full h-full object-cover mb-8 rounded-xl drop-shadow-[3px_5px_5px_rgba(0,0,0,0.5)]"
+                     />
+                 </div>
             </article>
-            <div className="hidden lg:flex lg:w-[50%]">
+            {/* <div className="hidden lg:flex lg:w-[50%]">
                 <Image
                     src="/fond_scene.webp"
                     width={500}
@@ -31,7 +33,7 @@ export default function SectionAbout() {
                     alt="Scène avec projecteurs"
                     className="w-full h-full object-cover mb-8 rounded-xl drop-shadow-[3px_5px_5px_rgba(0,0,0,0.7)]"
                 />
-            </div>
+            </div> */}
         </section>
     )
 }
