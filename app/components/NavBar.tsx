@@ -11,9 +11,9 @@ export default function NavBar() {
         <header className="bg-white fixed w-full top-0 z-50 pt-5 xl:py-5">
             <div className="px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
-                    <h1 className='text-red text-[1.625rem] font-semibold sm:text-[2.5rem] font-dancing'>{`Les Phénâtres de l'Artois`}</h1>
+                    <h1 className='text-red text-[1.625rem] sm:text-3xl font-semibold lg:text-4xl font-dancing'>{`Les Phénâtres de l'Artois`}</h1>
                     <nav className='hidden xl:flex space-x-8'>
-                        <ul className='flex my-auto gap-11 text-2xl ml-auto'>
+                        <ul className='flex my-auto gap-11 text-2xl ml-auto text-center'>
                             <MenuNavigation setIsMenuOpen={setIsMenuOpen} />
                         </ul>
                     </nav>
@@ -50,7 +50,7 @@ export default function NavBar() {
                     }`}
             >
                 <nav className="flex flex-col items-center bg-white shadow-lg transform transition-transform duration-700 ease-in-out">
-                    <ul className={`flex flex-col my-auto gap-5 text-2xl mb-2 transition-all duration-700 transform 
+                    <ul className={`flex flex-col my-auto mr-auto pl-4 sm:pl-6 lg:pl-8 gap-5 text-2xl mb-2 transition-all duration-700 transform 
                             ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
                         <MenuNavigation setIsMenuOpen={setIsMenuOpen} />
                     </ul>
