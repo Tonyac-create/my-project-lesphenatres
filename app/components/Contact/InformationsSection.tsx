@@ -6,7 +6,7 @@ export default function InformationsSection() {
     return (
         <section className="mt-24 p-8 md:px-28 md:py-11 tracking-wide">
             <div className="flex flex-col md:flex-row gap-7">
-                <div className="space-y-10 w-1/3">
+                <div className="space-y-10 lg:w-1/3">
                     <h2 className="text-4xl text-red font-bold mb-4 font-dancing">Informations pratiques</h2>
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Lieu des répétitions</h3>
