@@ -1,3 +1,9 @@
+const buildDate = new Date().toLocaleDateString('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+});
+
 export default function MentionsLegales() {
   return (
     <main className="mt-24 p-8 md:px-28 md:py-11 tracking-wide max-w-3xl mx-auto text-gray-800">
@@ -61,7 +67,7 @@ export default function MentionsLegales() {
         <li>Photo de <a href="https://unsplash.com/fr/@kilyan_s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Kilyan Sockalingum</a> sur <a href="https://unsplash.com/fr/photos/siege-de-cinema-rouge-numero-23-nW1n9eNHOsc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
       </ul>
 
-      <p className="text-sm text-gray-500 mt-11">Dernière mise à jour : 21 avril 2025</p>
+      <p className="text-sm text-gray-500 mt-11">Dernière mise à jour : {buildDate}</p>
     </main>
   );
 }
