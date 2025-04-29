@@ -44,7 +44,7 @@ export default function PartnerSection() {
                     className="partner-image"
                     title="Voir la page Facebook">
                     <Image
-                        src="/partners/Forum_Asso_arras.jpg"
+                        src="/partners/Forum_Asso_arras.webp"
                         width={200}
                         height={200}
                         priority={true}

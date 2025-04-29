@@ -17,7 +17,7 @@ export const spectaclesComplete = [
     {
         id: 1,
         description: "Ce spectacle est destiné aux enfants en classe élémentaire et nous explique l’importance de ces petites bêtes aussi fragiles qu'utiles à la planète. Rempli d’humour il vous fera passer un excellent moment soit en famille ou alors avec votre classe. ",
-        image2: ['/spectacles/abeille/abeille_1.jpg', '/spectacles/abeille/abeille_2.jpg', '/spectacles/abeille/abeille_3.webp', '/spectacles/abeille/abeille_4.webp', '/spectacles/abeille/abeille_5.webp'],
+        image2: ['/spectacles/abeille/abeille_1.jpg', '/spectacles/abeille/abeille_2.webp', '/spectacles/abeille/abeille_3.webp', '/spectacles/abeille/abeille_4.webp', '/spectacles/abeille/abeille_5.webp'],
         description2: "Une fée des fleurs nous explique la vie d’une abeille de sa naissance à son trépas, mais tout ne va pas tout à fait se passer comme prévu. Être tyrannique n’est jamais bon, et la reine ne s'est pas fait que des amis à force de traiter tout le monde de la sorte. S’en suivre un débat qui défraye la chronique, et va au travers de toute logique, mais cela serait trop long à vous expliquer, ça me prendrait toute une vie.",
         description3: "",
         title: "La vie d'Arlette de A à Bzzzz"
