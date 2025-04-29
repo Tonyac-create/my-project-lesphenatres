@@ -60,11 +60,11 @@ export default function MentionsLegales() {
       </section>
 
       <h2  className="text-xl font-semibold mb-2">7. Crédit photo</h2>
-      <p>Les images présentes sur ce site proviennent de <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+      <p>Les images présentes sur ce site proviennent de <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" className="text-red">Unsplash</a>.</p>
       <ul>
-        <li>Photo de <a href="https://unsplash.com/fr/@kyleunderscorehead?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Kyle Head</a> sur <a href="https://unsplash.com/fr/photos/silhouette-de-trois-interpretes-sur-scene-p6rNTdAPbuk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
-        <li>Photo de <a href="https://unsplash.com/fr/@roblaughter?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Rob Laughter</a> sur <a href="https://unsplash.com/fr/photos/rideau-de-theatre-rouge-WW1jsInXgwM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
-        <li>Photo de <a href="https://unsplash.com/fr/@kilyan_s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Kilyan Sockalingum</a> sur <a href="https://unsplash.com/fr/photos/siege-de-cinema-rouge-numero-23-nW1n9eNHOsc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>
+        <li>Photo de <a href="https://unsplash.com/fr/@kyleunderscorehead?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer" className="text-red">Kyle Head</a></li>
+        <li>Photo de <a href="https://unsplash.com/fr/@roblaughter?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer" className="text-red">Rob Laughter</a></li>
+        <li>Photo de <a href="https://unsplash.com/fr/@kilyan_s?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer" className="text-red">Kilyan Sockalingum</a></li>
       </ul>
 
       <p className="text-sm text-gray-500 mt-11">Dernière mise à jour : {buildDate}</p>
