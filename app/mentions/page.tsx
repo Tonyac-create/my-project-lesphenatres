@@ -59,7 +59,7 @@ export default function MentionsLegales() {
         </p>
       </section>
 
-      <h2>7. Crédit photo</h2>
+      <h2  className="text-xl font-semibold mb-2">7. Crédit photo</h2>
       <p>Les images présentes sur ce site proviennent de <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
       <ul>
         <li>Photo de <a href="https://unsplash.com/fr/@kyleunderscorehead?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Kyle Head</a> sur <a href="https://unsplash.com/fr/photos/silhouette-de-trois-interpretes-sur-scene-p6rNTdAPbuk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></li>

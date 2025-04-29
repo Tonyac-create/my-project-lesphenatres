@@ -35,8 +35,8 @@ export default function TheatreParcours() {
             </div>
 
             <div className="container mx-auto px-4 py-16">
-                {/* Titles for both paths */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                {/* Titles for both paths - visible only on md and up */}
+                <div className="hidden md:grid grid-cols-2 gap-8 mb-12">
                     <div className="text-center">
                         <h3 className="text-2xl font-bold text-slate-800">Parcours Ateliers & Impro</h3>
                     </div>
@@ -53,6 +53,11 @@ export default function TheatreParcours() {
 
                     {/* Steps */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+                        {/* Left Path Title - visible only on mobile */}
+                        <div className="text-center mb-8 md:hidden">
+                            <h3 className="text-2xl font-bold text-slate-800">Parcours Ateliers & Impro</h3>
+                        </div>
+                        
                         {/* Left Path - Step 1 */}
                         <div className="order-1 md:order-1 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out">
                             <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
@@ -93,8 +98,13 @@ export default function TheatreParcours() {
                             </div>
                         </div>
 
+                        {/* Right Path Title - visible only on mobile */}
+                        <div className="text-center mb-8 md:hidden order-4 md:order-2">
+                            <h3 className="text-2xl font-bold text-slate-800">Parcours Projets Théâtraux</h3>
+                        </div>
+
                         {/* Right Path - Step 1 */}
-                        <div className="order-4 md:order-2 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-100">
+                        <div className="order-5 md:order-2 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-100">
                             <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
                                 <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
                                 <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
@@ -105,7 +115,7 @@ export default function TheatreParcours() {
                         </div>
 
                         {/* Right Path - Step 2 */}
-                        <div className="order-5 md:order-4 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-300 mt-8 md:mt-16">
+                        <div className="order-6 md:order-4 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-300 mt-8 md:mt-16">
                             <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
                                 <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
                                 <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>
@@ -117,7 +127,7 @@ export default function TheatreParcours() {
                         </div>
 
                         {/* Right Path - Step 3 */}
-                        <div className="order-6 md:order-6 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-500 mt-8 md:mt-16">
+                        <div className="order-7 md:order-6 relative step-card opacity-0 translate-y-8 transition-all duration-700 ease-out delay-500 mt-8 md:mt-16">
                             <div className="bg-white rounded-lg shadow-lg p-6 relative z-10">
                                 <div className="absolute -top-5 left-8 w-10 h-10 bg-red text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
                                 <div className="hidden md:block absolute left-0 top-8 w-8 h-1 bg-red -translate-x-8"></div>

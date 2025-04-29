@@ -21,7 +21,7 @@ export default function Atelier({ title, age, description, photos }: AtelierProp
     };
 
     return (
-        <article className={`flex flex-col gap-16 gap-16 p-6 rounded-2xl lg:w-[500px] h-[500px] relative overflow-hidden`}>
+        <article className={`flex flex-col gap-16 p-6 rounded-2xl lg:w-[500px] h-[500px] relative overflow-hidden`}>
             <div className="pr-8">
                 <h3 className="text-2xl font-bold">{title}</h3>
                 <p className="text-gray-500 mb-3.5">{age}</p>
@@ -35,7 +35,7 @@ export default function Atelier({ title, age, description, photos }: AtelierProp
                             fill
                             alt={`${title} - Photo ${currentPhotoIndex + 1}`}
                             quality={100}
-                            className="object-contain rounded-lg shadow-lg"
+                            className="object-contain rounded-lg"
                         />
                     )}
                     <button
