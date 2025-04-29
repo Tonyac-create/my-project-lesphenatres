@@ -44,11 +44,21 @@ body {
 }
 
 .clip-bottom-left {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+  clip-path: none;
 }
 
 .clip-diagonal-right {
-  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: none;
+}
+
+@media (min-width: 768px) {
+  .clip-bottom-left {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+  }
+
+  .clip-diagonal-right {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
 }
 
 @keyframes slideFromRight {

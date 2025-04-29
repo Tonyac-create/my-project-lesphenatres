@@ -32,7 +32,7 @@ export default function SectionActivty() {
                     className="w-full h-80 object-cover object-center clip-bottom-left"
                 />
             </div>
-            <div className="relative w-3/4 mt-[-335px] mb-8 slide-from-left">
+            <div className="relative w-3/4 md:mt-[-335px] mb-8 slide-from-left">
                 <Image
                     src="/enfant_atelier.webp"
                     width={500}
