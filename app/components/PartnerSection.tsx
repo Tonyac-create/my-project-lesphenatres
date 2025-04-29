@@ -13,7 +13,7 @@ export default function PartnerSection() {
         return () => observer?.disconnect();
     }, [observeElements]);
     return (
-        <section className=" mt-16 p-8 md:px-28">
+        <section className=" mt-9 p-8 md:px-28">
             <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">Merci à nos partenaires</h2>
             <div className="flex flex-wrap justify-center items-center gap-7 slide-from-left">
                 <Link href="https://www.arras.fr/" target="_blank" className="partner-image" title="Voir le site">

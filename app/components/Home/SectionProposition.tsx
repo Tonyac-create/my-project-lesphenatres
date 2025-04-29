@@ -4,7 +4,7 @@ import Button from "../Button";
 export default function SectionProposition() {
     return (
         <section className="my-9">
-            <h2 className="font-dancing text-red sm:text-4xl xl:text-5xl mb-5 lg:mb-7 font-semibold flex mr-auto">{`Faites venir le théâtre dans votre entreprise, école ou collectivité !`}</h2>
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 lg:mb-7 font-semibold flex mr-auto">{`Faites venir le théâtre dans votre entreprise, école ou collectivité !`}</h2>
             <p className="text-lg md:text-xl xl:text-2xl">{`Vous souhaitez offrir un moment culturel et divertissant à votre public ?
              Notre troupe de théâtre propose des spectacles adaptés aux Comités d’Entreprise (CE), écoles, administrations et autres structures.`}</p>
             <p className="text-lg md:text-xl xl:text-2xl mt-3">{`Deux spectacles écrits, mis en scène et joués par notre troupe :`}</p>
