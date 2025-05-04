@@ -40,7 +40,7 @@ export default function JoinsUsSection() {
                         Nous suivre sur Instagram
                     </Link>
                 </div>
-                <div className="flex flex-col justify-start items-start py-4 lg:border-b-0 lg:border-r-2 border-red py-8">
+                <div className="flex flex-col justify-start items-start py-4 lg:border-b-0 border-red lg:px-6">
                     <h3 className="text-xl mb-5">{`Vous cherchez une troupe pour un événement ?`}</h3>
                     <h3 className="text-xl mb-5">{`Vous aimez le théâtre ?`}</h3>
                     <Button href="/contact" variant="secondary">{`Parlons-en !`}</Button>

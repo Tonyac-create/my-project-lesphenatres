@@ -3,10 +3,17 @@
 import { useContactStore } from '../store/useContactStore'
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser';
+import Modal from './Modal';
 
 export default function FormContact() {
     const { formData, setFormData, resetForm } = useContactStore()
     const [isSubmitting, setIsSubmitting] = useState(false)
+    const [showModal, setShowModal] = useState(false)
+    const [modalConfig, setModalConfig] = useState({
+        title: '',
+        message: '',
+        type: 'success' as 'success' | 'error'
+    });
     const form = useRef<HTMLFormElement>(null);
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -32,12 +39,22 @@ export default function FormContact() {
                     form.current,
                     publicKey
                 );
-                alert('Message envoyé avec succès!')
-                resetForm()
+                setModalConfig({
+                    title: 'Succès',
+                    message: 'Message envoyé avec succès !',
+                    type: 'success'
+                });
+                setShowModal(true);
+                resetForm();
             }
         } catch (error) {
             console.error('Error sending email:', error)
-            alert('Erreur lors de l\'envoi du message')
+            setModalConfig({
+                title: 'Erreur',
+                message: 'Une erreur est survenue lors de l\'envoi du message.',
+                type: 'error'
+            });
+            setShowModal(true);
         } finally {
             setIsSubmitting(false)
         }
@@ -47,7 +64,8 @@ export default function FormContact() {
     };
 
     return (
-        <form ref={form} onSubmit={handleSubmit} className="space-y-4 lg:p-6">
+        <>
+            <form ref={form} onSubmit={handleSubmit} className="space-y-4 xl:w-3/4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
@@ -129,5 +147,13 @@ export default function FormContact() {
                 </button>
             </div>
         </form>
+        <Modal
+            isOpen={showModal}
+            onClose={() => setShowModal(false)}
+            title={modalConfig.title}
+            message={modalConfig.message}
+            type={modalConfig.type}
+        />
+        </>
     )
 }

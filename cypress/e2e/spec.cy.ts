@@ -113,3 +113,4 @@ describe('check footer links', () => {
       .and('have.attr', 'target', '_blank')
   })
 })
+
