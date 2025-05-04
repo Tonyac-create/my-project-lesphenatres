@@ -35,7 +35,7 @@ export const team = [
         description: "Les sous, c'est son affaire"
     },
     {
-        src: "/membreCA/Jordan_membreCA.webp",
+        src: "/membreCA/Jordan_MembreCA.webp",
         alt: "Jordan",
         name: "Jordan Fondase",    
         role: "Membre CA",
