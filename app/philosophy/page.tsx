@@ -1,4 +1,3 @@
-// import FriseSection from "../components/Philisophy/FriseSection";
 import HeroSection from "../components/Philisophy/HeroSection";
 import JoinsUsSection from "../components/Philisophy/JoinsUsSection";
 import HistorySection from "../components/Philisophy/HistorySection";
@@ -10,11 +9,8 @@ export default function Troupe() {
         <>
             <HeroSection />
             <HistorySection />
-            {/* <div className="grid grid-cols-1 md:grid-cols-2"> */}
             <ValuesSection />
             <PhilosophySection />
-            {/* </div> */}
-            {/* <FriseSection /> */}
             <JoinsUsSection />
         </>
     );
