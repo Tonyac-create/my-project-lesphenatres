@@ -9,7 +9,7 @@ export default function HeroSection() {
             <div className="flex flex-col items-center justify-center py-16 px-4">
                 <div className="slide-from-left gap-9 lg:gap-24 text-white flex flex-col md:flex-row">
                     <Image
-                        src="/Logo_phenatres.webp"
+                        src="/Logo_Phenatres.webp"
                         width={200}
                         height={200}
                         alt="Logo Les Phénâtres"
