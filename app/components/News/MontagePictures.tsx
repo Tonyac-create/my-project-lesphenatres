@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MontagePictures() {
     return (
-        <article className="px-28 my-24">
+        <article className="p-8 md:px-28 md:pt-11 tracking-wide">
             <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">À venir</h2>
             <Image
                 src="/news/spectacle_270425.webp"

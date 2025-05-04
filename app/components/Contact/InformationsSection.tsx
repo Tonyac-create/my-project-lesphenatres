@@ -36,8 +36,8 @@ export default function InformationsSection() {
                     </div>
 
                     <div>
-                        <h3 className="text-xl font-semibold mb-2">Cotisation annuelle (dès février 2025, profitez du tarif à moitié prix.)</h3>
-                        <p className="text-gray-700 mb-4 italic">
+                        <h3 className="text-xl font-semibold mb-2">Cotisation annuelle (dès février 2025, profitez du tarif à moitié prix)</h3>
+                        <p className="text-gray-700 mb-4 italic underline underline-offset-2">
                             Vous avez 4 séances gratuites avant inscription définitive
                         </p>
                         <p className="text-gray-700">
@@ -117,10 +117,10 @@ export default function InformationsSection() {
                         alt="Logo"
                         className="object-cover mx-auto"
                     />
-                    <h2 className="text-4xl text-red font-bold mb-4 font-dancing">{`Un renseignement, une demande pour un spectacle ?`}</h2>
+                    <h2 className="text-3xl sm:text-4xl xl:text-5xl text-red font-bold my-5 font-dancing">{`Un renseignement, une demande pour un spectacle ?`}</h2>
                     <FormContact />
                     <div className="mt-8">
-                        <h3 className="text-2xl text-red font-bold">{`Téléchargez nos fiches d'inscription`}</h3>
+                        <h3 className="text-3xl sm:text-4xl xl:text-5xl mb-5 text-red font-bold font-dancing">{`Téléchargez nos fiches d'inscription`}</h3>
                         <p className=" mb-4">A remplir et à envoyer par email ou nous les porter directement lors d'un atelier</p>
                         <div className="flex flex-col space-y-4">
                             <p className="font-semibold">Pour adulte</p>

@@ -47,7 +47,7 @@ export default function FormContact() {
     };
 
     return (
-        <form ref={form} onSubmit={handleSubmit} className="space-y-4 p-6">
+        <form ref={form} onSubmit={handleSubmit} className="space-y-4 lg:p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
@@ -60,7 +60,7 @@ export default function FormContact() {
                         value={formData.firstName}
                         onChange={(e) => handleInputChange('firstName', e.target.value)}
                         required
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-[1px] border-black/50 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                     />
                 </div>
                 <div>
@@ -74,7 +74,7 @@ export default function FormContact() {
                         value={formData.lastName}
                         onChange={(e) => handleInputChange('lastName', e.target.value)}
                         required
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
+                        className="mt-1 block w-full rounded-md border-[1px] border-black/50 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                     />
                 </div>
             </div>
@@ -89,7 +89,7 @@ export default function FormContact() {
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
                     required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
+                    className="mt-1 block w-full rounded-md border-[1px] border-black/50 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                 />
             </div>
             <div>
@@ -102,7 +102,7 @@ export default function FormContact() {
                     id="phone"
                     value={formData.phone}
                     onChange={(e) => handleInputChange('phone', e.target.value)}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
+                    className="mt-1 block w-full rounded-md border-[1px] border-black/50 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                 />
             </div>
             <div>
@@ -116,7 +116,7 @@ export default function FormContact() {
                     value={formData.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
                     required
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red focus:ring-red sm:text-sm"
+                    className="mt-1 block w-full rounded-md border-[1px] border-black/50 shadow-sm focus:border-red focus:ring-red sm:text-sm"
                 />
             </div>
             <div>
