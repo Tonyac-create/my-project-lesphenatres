@@ -5,9 +5,9 @@ import Link from "next/link";
 
 export default function HeroSection() {
     return (
-        <section className="flex mt-[5.875rem] w-full bg-red">
+        <section className="flex justify-center items-center mt-[5.875rem] w-full h-[450px] bg-red">
             <div className="flex flex-col items-center justify-center py-16 px-4">
-                <div className="slide-from-left gap-9 lg:gap-24 text-white flex flex-col items-center md:flex-row">
+                <div className="slide-from-left gap-9 lg:gap-24 text-white flex flex-col md:flex-row">
                     <Image
                         src="/Logo_phenatres.webp"
                         width={200}
@@ -32,7 +32,7 @@ export default function HeroSection() {
                     </div>
                     <Image
                         src="/icons/Mask_NB.png"
-                        width={150}
+                        width={200}
                         height={150}
                         alt=""
                         className="rotate-45"
