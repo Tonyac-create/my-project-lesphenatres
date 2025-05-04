@@ -1,10 +1,11 @@
 import { spectaclesComplete } from "@/app/utils/spectacle";
 import CardSpectacle from "./CardSpectacle";
+import Button from "../Button";
 
 export default function SectionProjets() {
     return (
-        <section className="my-20 p-8 md:px-28 md:py-11 tracking-wide">
-            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-8 font-semibold">Nos spectacles</h2>
+        <section className="p-8 md:px-28 md:py-11 tracking-wide">
+            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Nos spectacles</h2>
             <div className="flex flex-col gap-10">
                 {spectaclesComplete.map((spectacle) => (
                     <CardSpectacle
@@ -17,6 +18,7 @@ export default function SectionProjets() {
                     />
                 ))}
             </div>
+            <Button href="/contact" variant="secondary">Réservez un spectacle</Button>
         </section>
     )
 }

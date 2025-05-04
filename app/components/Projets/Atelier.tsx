@@ -21,7 +21,7 @@ export default function Atelier({ title, age, description, photos }: AtelierProp
     };
 
     return (
-        <article className={`flex flex-col gap-16 p-6 rounded-2xl lg:w-[500px] h-[500px] relative overflow-hidden`}>
+        <article className={`flex flex-col gap-4 p-6 rounded-2xl lg:w-[500px] h-[500px] relative overflow-hidden`}>
             <div className="pr-8">
                 <h3 className="text-2xl font-bold">{title}</h3>
                 <p className="text-gray-500 mb-3.5">{age}</p>
@@ -56,19 +56,19 @@ export default function Atelier({ title, age, description, photos }: AtelierProp
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                     </button>
-                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
-                        {photos.map((_, index) => (
-                            <button
-                                key={index}
-                                onClick={() => setCurrentPhotoIndex(index)}
-                                className={`w-2 h-2 rounded-full ${
-                                    index === currentPhotoIndex ? 'bg-red' : 'bg-gray-300'
-                                }`}
-                                aria-label={`Aller à la photo ${index + 1}`}
-                            />
-                        ))}
-                    </div>
                 </div>
+            </div>
+            <div className="flex justify-center gap-2">
+                {photos.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setCurrentPhotoIndex(index)}
+                        className={`w-3 h-3 rounded-full ${
+                            index === currentPhotoIndex ? 'bg-red' : 'bg-black'
+                        }`}
+                        aria-label={`Aller à la photo ${index + 1}`}
+                    />
+                ))}
             </div>
         </article>
     );

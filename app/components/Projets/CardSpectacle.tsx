@@ -2,7 +2,7 @@
 
 import { useScrollAnimation } from "@/app/hooks/useScrollAnimation";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 type spectacleProps = {
     pictures: string[],
@@ -26,9 +26,9 @@ export default function CardSpectacle({ pictures, title, description, descriptio
             <h2 className="animation-down animation-down-2 font-dancing text-black text-3xl md:text-5xl mb-5 font-semibold">{title}</h2>
 
             {/* Premières images (2) */}
-            <div className="animation-down animation-down-1 flex flex-col md:flex-row justify-center gap-4 mb-8">
+            <div className="animation-down animation-down-1 flex flex-col md:flex-row justify-center gap-4 mb-3">
                 {pictures.length >= 1 && (
-                    <div className="animation-down animation-down-1 grid grid-cols-1 md:grid-cols-2 gap-14 mb-8">
+                    <div className="animation-down animation-down-1 grid grid-cols-1 md:grid-cols-2 gap-14 mb-3">
                         {pictures.slice(0, 2).map((picture, index) => (
                             <Image
                                 key={index}
@@ -50,7 +50,7 @@ export default function CardSpectacle({ pictures, title, description, descriptio
             </div>
 
             {/* Description */}
-            <p className="animation-down animation-down-3 text-lg w-[80%] mb-8">{description}</p>
+            <p className="animation-down animation-down-3 text-lg lg:w-[80%] mb-3">{description}</p>
 
             {/* Images du milieu (2) */}
             <div className="animation-down animation-down-4 flex flex-col md:flex-row justify-center gap-14 mb-8">
@@ -63,13 +63,13 @@ export default function CardSpectacle({ pictures, title, description, descriptio
                         priority={false}
                         quality={100}
                         alt={`${title} - image ${index + 3}`}
-                        className="object-cover w-1/3 rounded-xl drop-shadow-[5px_5px_5px_rgba(0,0,0,0.7)]"
+                        className="object-cover w-[400px] h-[300px] rounded-xl drop-shadow-[5px_5px_5px_rgba(0,0,0,0.7)]"
                     />
                 ))}
             </div>
 
             {/* Description 2 */}
-            <p className="animation-down animation-down-5 text-lg w-[80%] mb-8 italic">{`" ${description2} "`}</p>
+            <p className="animation-down animation-down-5 text-lg lg:w-[80%] mb-3 italic">{`" ${description2} "`}</p>
 
             {/* Dernière image */}
             <div className="animation-down animation-down-4 flex flex-col md:flex-row justify-center mb-8">
@@ -81,13 +81,13 @@ export default function CardSpectacle({ pictures, title, description, descriptio
                         priority={false}
                         quality={100}
                         alt={`${title} - image 5`}
-                        className="object-cover w-1/3 rounded-xl drop-shadow-[5px_5px_5px_rgba(0,0,0,0.7)]"
+                        className="object-cover w-[400px] h-[300px] rounded-xl drop-shadow-[5px_5px_5px_rgba(0,0,0,0.7)]"
                     />
                 )}
             </div>
 
             {/* Description 3 */}
-            <p className="animation-down animation-down-7 text-lg w-[80%]">{description3}</p>
+            <p className="animation-down animation-down-7 text-lg lg:w-[80%]">{description3}</p>
         </article>
     )
 }

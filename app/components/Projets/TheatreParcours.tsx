@@ -27,14 +27,14 @@ export default function TheatreParcours() {
     return (
         <section className="bg-stone-50 min-h-screen">
             <div className="bg-red text-white py-12 px-4 text-center">
-                <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold mb-4 font-dancing">Les Deux Chemins du Théâtre</h2>
+                <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold mb-5 font-dancing">Les Deux Chemins du Théâtre</h2>
                 <p className="text-lg md:text-xl xl:text-2xl max-w-3xl mx-auto">
                     Dans notre association, nous avons un circuit bien défini pour chaque activité. Les ateliers sont liés à nos spectacles d’improvisation, tandis que nos projets parallèles suivent un parcours différent — c’est ce que nous allons vous expliquer un peu plus bas.
                     Les étapes générales restent globalement les mêmes, mais dans la mise en œuvre… c’est une autre planche. Vous avez la réf 
                 </p>
             </div>
 
-            <div className="container mx-auto px-4 py-16">
+            <div className="container mx-auto px-4">
                 {/* Titles for both paths - visible only on md and up */}
                 <div className="hidden md:grid grid-cols-2 gap-8 mb-12">
                     <div className="text-center">
