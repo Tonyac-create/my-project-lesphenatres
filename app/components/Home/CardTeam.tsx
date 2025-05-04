@@ -29,7 +29,7 @@ export default function CardTeam({ src, alt, name, role, description }: CardTeam
                 alt={alt}
                 className="w-[250px] h-[250px] object-cover rounded-full mx-auto animate-blur-in custom-shadow"
             />
-            <h4 className="text-red text-3xl mt-5 mb-3 font-dancing font-semibold">{name}</h4>
+            <h3 className="text-red text-3xl mt-5 mb-3 font-dancing font-semibold">{name}</h3>
             <p className="text-2xl text-black">{role}</p>
             <p className="text-xl text-black text-center">{description}</p>
         </article>
