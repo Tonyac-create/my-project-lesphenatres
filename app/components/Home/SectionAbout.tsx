@@ -24,16 +24,6 @@ export default function SectionAbout() {
                      />
                  </div>
             </article>
-            {/* <div className="hidden lg:flex lg:w-[50%]">
-                <Image
-                    src="/fond_scene.webp"
-                    width={500}
-                    height={500}
-                    quality={100}
-                    alt="Scène avec projecteurs"
-                    className="w-full h-full object-cover mb-8 rounded-xl drop-shadow-[3px_5px_5px_rgba(0,0,0,0.7)]"
-                />
-            </div> */}
         </section>
     )
 }

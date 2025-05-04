@@ -1,0 +1,5 @@
+# Ce fichier contrôle l'accès des robots au site
+User-agent: *
+Disallow:
+
+Sitemap: 

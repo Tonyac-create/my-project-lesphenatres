@@ -17,8 +17,8 @@ export default function SectionActivty() {
     }, [observeElements]);
 
     return (
-        <section className="relative flex flex-col items-start gap-6 mb-9 px-8 md:px-28 md:pb-11 tracking-wide">
-            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl font-semibold flex mr-auto">Nos activités</h2>
+        <section className="relative flex flex-col items-start mb-9 px-8 md:px-28 md:pb-11 tracking-wide">
+            <h2 className="font-dancing text-red text-3xl mb-5 sm:text-4xl xl:text-5xl font-semibold flex mr-auto">Nos activités</h2>
             <div className="relative w-3/4 slide-from-right">
                 <div className="p-6 bg-red text-white">
                     <h3 className="text-2xl font-bold">Ateliers Adultes</h3>
@@ -32,7 +32,7 @@ export default function SectionActivty() {
                     className="w-full h-80 object-cover object-center clip-bottom-left"
                 />
             </div>
-            <div className="relative w-3/4 md:mt-[-335px] mb-8 slide-from-left">
+            <div className="relative w-3/4 md:mt-[-335px] mb-10 slide-from-left">
                 <Image
                     src="/enfant_atelier.webp"
                     width={500}
@@ -47,8 +47,8 @@ export default function SectionActivty() {
             </div>
             <Button href="/projets" variant="secondary">C'est quoi un atelier ?</Button>
             <SectionProposition />
-            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mt-8 mb-3.5 font-semibold flex mr-auto">{`Des spectacles engagés !`}</h2>
-            <div className="flex flex-col justify-center lg:flex-row gap-12">
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mt-8 mb-5 font-semibold flex mr-auto">{`Des spectacles engagés !`}</h2>
+            <div className="flex flex-col justify-center lg:flex-row gap-12 mb-10">
                 {spectacles.map((spectacle) => (
                     <CardSpectacle
                         key={spectacle.id}
