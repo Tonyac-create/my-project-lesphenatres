@@ -21,7 +21,6 @@ export default function PartnerSection() {
                         src="/partners/Ville_Arras.webp"
                         width={200}
                         height={200}
-                        priority={true}
                         quality={100}
                         alt="Ville d'Arras"
                         className="object-cover"
@@ -32,7 +31,6 @@ export default function PartnerSection() {
                         src="/partners/Office_Culturel_Arras.png"
                         width={200}
                         height={200}
-                        priority={true}
                         quality={100}
                         alt="Office Culturel d'Arras"
                         className="object-cover"
@@ -47,7 +45,6 @@ export default function PartnerSection() {
                         src="/partners/Forum_Asso_arras.webp"
                         width={200}
                         height={200}
-                        priority={true}
                         quality={100}
                         alt="Forum des associations d'Arras"
                         className="object-cover"
@@ -58,7 +55,6 @@ export default function PartnerSection() {
                         src="/partners/Reptilblade.webp"
                         width={200}
                         height={200}
-                        priority={true}
                         quality={100}
                         alt="ReptilBlade"
                         className="object-cover"
@@ -69,7 +65,6 @@ export default function PartnerSection() {
                         src="/partners/free.png"
                         width={200}
                         height={200}
-                        priority={true}
                         quality={100}
                         alt="Free-dev"
                         className="object-cover"
