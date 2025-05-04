@@ -17,9 +17,9 @@ export default function SectionActivty() {
     }, [observeElements]);
 
     return (
-        <section className="relative flex flex-col items-start mb-9 px-8 md:px-28 md:pb-11 tracking-wide">
+        <section className="relative flex flex-col items-start mb-9 px-8 md:px-20 md:pb-11 tracking-wide">
             <h2 className="font-dancing text-red text-3xl mb-5 sm:text-4xl xl:text-5xl font-semibold flex mr-auto">Nos activités</h2>
-            <div className="relative w-3/4 slide-from-right">
+            <div className="relative w-3/4 slide-from-right mb-3 md:mb-0">
                 <div className="p-6 bg-red text-white">
                     <h3 className="text-2xl font-bold">Ateliers Adultes</h3>
                     <p className="text-lg md:text-xl xl:text-2xl">{`Séances d'improvisations, travail sur textes et pièce écrite, réalisée, mise en scène et jouée par notre troupe !`}</p>

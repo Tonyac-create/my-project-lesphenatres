@@ -15,7 +15,7 @@ export default function HeroSection() {
                         alt="Logo Les Phénâtres"
                     />
                     <div className="flex flex-col items-center w-[90%]">
-                        <h2 className="font-dancing text-4xl leading-11 md:text-6xl text-center mt-5 slide-from-left slide-delay-300">
+                        <h2 className="font-dancing text-4xl leading-11 md:text-5xl text-center mt-5 slide-from-left slide-delay-300">
                             {`La troupe est en mouvement !`}
                         </h2>
                         <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="flex flex-row mt-12 text-xl text-white gap-3 items-center">
@@ -31,8 +31,8 @@ export default function HeroSection() {
                     </div>
                     <Image
                         src="/icons/Mask_NB.png"
-                        width={300}
-                        height={300}
+                        width={150}
+                        height={150}
                         alt=""
                         className="rotate-45"
                     />

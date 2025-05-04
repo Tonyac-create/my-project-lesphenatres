@@ -3,7 +3,7 @@ import Atelier from "./Atelier";
 
 export default function SectionAtelier() {
     return (
-        <section className="px-8 pt-9 pb-10 md:px-28 md:py-11 tracking-wide">
+        <section className="px-8 pt-9 pb-10 md:px-20 md:py-11 tracking-wide">
             <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">Quel atelier est fait pour vous ?</h2>
             <p className="text-lg md:text-xl xl:text-2xl mb-5">Ici, tout le monde peut trouver sa place ! Enfants ou adultes, venez découvrir un atelier qui vous ressemble.</p>
             <div className="flex flex-col lg:flex-row justify-center gap-16">

@@ -4,8 +4,8 @@ import Button from "../Button";
 
 export default function SectionProjets() {
     return (
-        <section className="p-8 md:px-28 md:py-11 tracking-wide">
-            <h2 className="font-dancing text-red text-3xl md:text-5xl mb-5 font-semibold">Nos spectacles</h2>
+        <section className="p-8 md:px-20 md:py-11 tracking-wide">
+            <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">Nos spectacles</h2>
             <div className="flex flex-col gap-10">
                 {spectaclesComplete.map((spectacle) => (
                     <CardSpectacle

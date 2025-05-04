@@ -23,7 +23,7 @@ export default function CardSpectacle({ pictures, title, description, descriptio
 
     return (
         <article>
-            <h2 className="animation-down animation-down-2 font-dancing text-black text-3xl md:text-5xl mb-5 font-semibold">{title}</h2>
+            <h2 className="animation-down animation-down-2 font-dancing text-black text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">{title}</h2>
 
             {/* Premières images (2) */}
             <div className="animation-down animation-down-1 flex flex-col md:flex-row justify-center gap-4 mb-3">

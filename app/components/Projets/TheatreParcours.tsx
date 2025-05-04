@@ -37,10 +37,10 @@ export default function TheatreParcours() {
             <div className="container mx-auto px-4">
                 {/* Titles for both paths - visible only on md and up */}
                 <div className="hidden md:grid grid-cols-2 gap-8 mb-12">
-                    <div className="text-center">
+                    <div className="mt-5">
                         <h3 className="text-2xl font-bold text-slate-800">Parcours Ateliers & Impro</h3>
                     </div>
-                    <div className="text-center">
+                    <div className="mt-5">
                         <h3 className="text-2xl font-bold text-slate-800">Parcours Projets Théâtraux</h3>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ export default function TheatreParcours() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
                         {/* Left Path Title - visible only on mobile */}
                         <div className="text-center mb-8 md:hidden">
-                            <h3 className="text-2xl font-bold text-slate-800">Parcours Ateliers & Impro</h3>
+                            <h3 className="text-2xl mt-5 font-bold text-slate-800">Parcours Ateliers & Impro</h3>
                         </div>
                         
                         {/* Left Path - Step 1 */}

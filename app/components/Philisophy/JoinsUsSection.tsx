@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function JoinsUsSection() {
     return (
-        <section className="flex flex-col p-8 md:px-28 md:py-11 tracking-wide mb-14">
+        <section className="flex flex-col p-8 md:px-20 md:py-11 tracking-wide mb-14">
             <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mb-5 font-semibold">{`Rejoignez nous dans l'aventure`}</h2>
             <div className="flex flex-wrap">
                 <div className="flex flex-col justify-start items-start border-b-2 pb-4 lg:border-b-0 lg:border-r-2 border-red pr-8">
