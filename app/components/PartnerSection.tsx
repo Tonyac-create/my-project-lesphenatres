@@ -24,6 +24,7 @@ export default function PartnerSection() {
                         quality={100}
                         alt="Ville d'Arras"
                         className="object-cover"
+                        loading="lazy"
                     />
                 </Link>
                 <Link href="https://www.officeculturelarras.fr/page/1690940-accueil" target="_blank" className="partner-image" title="Voir le site">
@@ -34,6 +35,7 @@ export default function PartnerSection() {
                         quality={100}
                         alt="Office Culturel d'Arras"
                         className="object-cover"
+                        loading="lazy"
                     />
                 </Link>
                 <Link
@@ -48,6 +50,7 @@ export default function PartnerSection() {
                         quality={100}
                         alt="Forum des associations d'Arras"
                         className="object-cover"
+                        loading="lazy"
                     />
                 </Link>
                 <Link href="https://reptileblade.wixsite.com/reptileblade" target="_blank" className="partner-image" title="Voir le site">
@@ -58,6 +61,7 @@ export default function PartnerSection() {
                         quality={100}
                         alt="ReptilBlade"
                         className="object-cover"
+                        loading="lazy"
                     />
                 </Link>
                 <Link href="https://www.free-dev.fr/" target="_blank" className="partner-image" title="Voir le site">
@@ -68,6 +72,7 @@ export default function PartnerSection() {
                         quality={100}
                         alt="Free-dev"
                         className="object-cover"
+                        loading="lazy"
                     />
                 </Link>
             </div>
