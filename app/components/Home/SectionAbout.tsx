@@ -18,7 +18,7 @@ export default function SectionAbout() {
                          src="/fond_scene.webp"
                          width={500}
                          height={500}
-                         quality={100}
+                         loading="lazy"
                          alt="Scène avec projecteurs"
                          className="w-full h-full object-cover mb-8 rounded-xl drop-shadow-[3px_5px_5px_rgba(0,0,0,0.5)]"
                      />

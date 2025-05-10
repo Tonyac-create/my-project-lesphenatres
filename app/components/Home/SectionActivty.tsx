@@ -35,11 +35,11 @@ export default function SectionActivty() {
             <div className="relative w-3/4 md:mt-[-335px] mb-10 slide-from-left">
                 <Image
                     src="/enfant_atelier.webp"
+                    alt="Atelier théâtre enfants"
                     width={500}
                     height={500}
-                    loading="lazy"
-                    alt="Atelier théâtre enfants"
                     className="w-full h-80 object-cover object-top clip-diagonal-right"
+                    sizes="(max-width: 768px) 400px, (max-width: 1024px) 500px, 600px"
                 />
                 <div className="p-6 bg-black text-white">
                     <h3 className="text-2xl font-bold">Ateliers Enfants</h3>
