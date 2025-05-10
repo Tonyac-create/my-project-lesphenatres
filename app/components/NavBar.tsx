@@ -3,15 +3,24 @@
 import MenuNavigation from './MenuNavigation';
 import { useState } from 'react';
 import Image from 'next/image'
+import { usePathname } from 'next/navigation';
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname();
+    const isHomePage = pathname === '/';
+
+    const titleClassName = 'text-red text-[1.625rem] sm:text-3xl font-semibold lg:text-4xl font-dancing';
 
     return (
         <header className="bg-white fixed w-full top-0 z-50 pt-5 xl:py-5">
             <div className="px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
-                    <h1 className='text-red text-[1.625rem] sm:text-3xl font-semibold lg:text-4xl font-dancing'>{`Les Phénâtres de l'Artois`}</h1>
+                    {isHomePage ? (
+                        <h1 className={titleClassName}>{`Les Phénâtres de l'Artois`}</h1>
+                    ) : (
+                        <div className={titleClassName}>{`Les Phénâtres de l'Artois`}</div>
+                    )}
                     <nav className='hidden xl:flex space-x-8'>
                         <ul className='flex my-auto gap-11 text-2xl ml-auto text-center'>
                             <MenuNavigation setIsMenuOpen={setIsMenuOpen} />
