@@ -37,6 +37,7 @@ export default function SectionActivty() {
                     src="/enfant_atelier.webp"
                     width={500}
                     height={500}
+                    loading="lazy"
                     alt="Atelier théâtre enfants"
                     className="w-full h-80 object-cover object-top clip-diagonal-right"
                 />

@@ -29,7 +29,6 @@ export default function HeroSection() {
                     src="/Logo_Phenatres.webp"
                     width={300}
                     height={300}
-                    quality={100}
                     priority
                     alt="Logo du théâtre"
                     className="w-48 h-48 md:w-60 md:h-60 xl:w-72 xl:h-72 object-cover"
