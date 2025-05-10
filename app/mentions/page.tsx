@@ -1,8 +1,18 @@
+import type { Metadata } from "next";
+
 const buildDate = new Date().toLocaleDateString('fr-FR', {
   day: 'numeric',
   month: 'long',
   year: 'numeric'
 });
+
+export const metadata: Metadata = {
+    title: "Mentions Légales - Les Phénâtres de l'Artois",
+    description: "Mentions légales et informations juridiques de l'association Les Phénâtres de l'Artois, troupe de théâtre à Arras.",
+    alternates: {
+        canonical: '/mentions',
+    },
+};
 
 export default function MentionsLegales() {
   return (
