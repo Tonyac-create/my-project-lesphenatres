@@ -1,5 +1,11 @@
-# Ce fichier contrôle l'accès des robots au site
+# Configuration des robots d'indexation pour Les Phénatres
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: 
+# Interdire l'accès aux dossiers privés ou techniques
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_vercel/
+
+# Déclaration du sitemap
+Sitemap: https://lesphenatres.vercel.app/sitemap.xml

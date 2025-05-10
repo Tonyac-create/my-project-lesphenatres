@@ -6,7 +6,7 @@ import BackToTopButton from "./components/BackToTopButton";
 
 export const metadata: Metadata = {
   title: "Les Phénâtres de l'Artois",
-  description: "Découvrez la troupe de théâtre Les Phénâtres de l'Artois à Arras : spectacles vivants, improvisation et créations originales. Une passion pour la scène à partager en famille ou entre amis.",
+  description: "Découvrez la troupe de théâtre Les Phénâtres de l'Artois à Arras : improvisation et créations originales. Une passion pour la scène à partager.",
 };
 
 export default function RootLayout({
