@@ -24,7 +24,7 @@ export default function HeroSection() {
                                 src="/icons/pouce_facebook.png"
                                 width={50}
                                 height={50}
-                                alt=""
+                                alt="Facebook Logo"
                                 className="animate-bounce"
                             />
                             Liker notre page pour savoir ou et quand voir nos spectacles !
@@ -34,7 +34,7 @@ export default function HeroSection() {
                         src="/icons/Mask_NB.png"
                         width={200}
                         height={150}
-                        alt=""
+                        alt="Mask"
                         className="rotate-45"
                     />
                 </div>

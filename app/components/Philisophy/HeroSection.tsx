@@ -10,7 +10,7 @@ export default function HeroSection() {
                 src="/icons/arrow-down-solid.svg"
                 width={60}
                 height={60}
-                alt=""
+                alt="Flèche"
                 className="w-8 h-8 md:w-14 md:h-14 xl:w-16 xl:h-16 animate-bounce mt-28"
             />
         </section>

@@ -21,7 +21,7 @@ export default function ValuesSection() {
                         src="/icons/heart.svg"
                         width={80}
                         height={80}
-                        alt=""
+                        alt="Coeur"
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
                     <p className="text-lg md:text-xl xl:text-2xl mt-3 text-center">{`Jouer, vibrer, transmettre des émotions`}</p>
@@ -31,7 +31,7 @@ export default function ValuesSection() {
                         src="/icons/shield.svg"
                         width={80}
                         height={80}
-                        alt=""
+                        alt="Bouclier"
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
                     <p className="text-lg md:text-xl xl:text-2xl mt-3 text-center">Un théâtre accessible et inclusif</p>
@@ -41,7 +41,7 @@ export default function ValuesSection() {
                         src="/icons/star.svg"
                         width={89}
                         height={89}
-                        alt=""
+                        alt="Etoile"
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
                     <p className="text-lg md:text-xl xl:text-2xl mt-3 text-center">Raconter des histoires autrement</p>
@@ -51,7 +51,7 @@ export default function ValuesSection() {
                         src="/icons/Icon_perons.png"
                         width={100}
                         height={100}
-                        alt=""
+                        alt="Personne"
                         className="drop-shadow-[3px_7px_7px_rgba(0,0,0,0.7)]"
                     />
                     <p className="text-lg md:text-xl xl:text-2xl mt-3 text-center">Un lien unique entre acteurs et spectateurs</p>

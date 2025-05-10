@@ -29,7 +29,7 @@ export default function NavBar() {
                                     src="/icons/xmark.svg"
                                     width={36}
                                     height={36}
-                                    alt=""
+                                    alt="Croix"
                                     className='w-6 h-6 md:w-9 md:h-9 transition-transform duration-400 rotate-90 hover:rotate-180'
                                 />
                             ) : (
@@ -37,7 +37,7 @@ export default function NavBar() {
                                     src="/icons/bars.svg"
                                     width={36}
                                     height={36}
-                                    alt=""
+                                    alt="Menu burger"
                                     className='w-6 h-6 md:w-9 md:h-9 transition-transform duration-400 hover:scale-110'
                                 />
                             )}
