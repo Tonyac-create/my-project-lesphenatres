@@ -44,8 +44,32 @@ export default function HeroSection() {
                     {`Un espace où chacun progresse à son rythme, en s’amusant et sans prise de tête. Ici, on vient comme on est, on crée, on improvise et surtout, on partage !`}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-7 mt-12">
-                    <Button href="/philosophy" variant="primary">Notre philosophie</Button>
-                    <Button href="/contact" variant="secondary">{`Besoin d'infos ?`}</Button>
+                    <Button 
+                        href="/philosophy" 
+                        variant="primary"
+                        onClick={() => {
+                            if (typeof window.plausible === 'function') {
+                                window.plausible('click_philosophy', {
+                                    props: { location: 'hero_section' }
+                                });
+                            }
+                        }}
+                    >
+                        Notre philosophie
+                    </Button>
+                    <Button 
+                        href="/contact" 
+                        variant="secondary"
+                        onClick={() => {
+                            if (typeof window.plausible === 'function') {
+                                window.plausible('click_contact', {
+                                    props: { location: 'hero_section' }
+                                });
+                            }
+                        }}
+                    >
+                        {`Besoin d'infos ?`}
+                    </Button>
                 </div>
             </div>
         </section>
