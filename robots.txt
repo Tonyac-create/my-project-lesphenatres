@@ -8,4 +8,4 @@ Disallow: /_next/
 Disallow: /_vercel/
 
 # Déclaration du sitemap
-Sitemap: https://lesphenatres.vercel.app/sitemap.xml
+Sitemap: https://lesphenatres.fr/sitemap.xml

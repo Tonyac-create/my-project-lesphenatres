@@ -8,7 +8,7 @@ import BackToTopButton from "./components/BackToTopButton";
 export const metadata: Metadata = {
   title: "Les Phénâtres de l'Artois",
   description: "Découvrez la troupe de théâtre Les Phénâtres de l'Artois à Arras : improvisation et créations originales. Une passion pour la scène à partager.",
-  metadataBase: new URL('https://lesphenatres.vercel.app'),
+  metadataBase: new URL('https://lesphenatres.fr'),
   alternates: {
     canonical: '/',
   },
@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <Script
           defer
-          data-domain="lesphenatres.vercel.app"
+          data-domain="lesphenatres.fr"
           src="https://plausible.io/js/script.file-downloads.tagged-events.js"
           strategy="afterInteractive"
         />
