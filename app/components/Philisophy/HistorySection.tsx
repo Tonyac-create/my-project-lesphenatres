@@ -5,7 +5,7 @@ export default function HistorySection() {
             <p className="text-lg md:text-xl xl:text-2xl">
                 {`Notre association a été créée en 2020, au tristement célèbre moment de la pandémie du covid 19, elle a été créée
                  par un groupe de personnes voulant juste faire du théâtre et en partageant cette passion au plus grand nombre,
-                  tout en restant contrairement à une expérience précédente. Le nom de l'association “Les phénâtres de l'Artois”
+                  à l'opposé d'une expérience précédente. Le nom de l'association “Les phénâtres de l'Artois”
                    est un mélange des 2 mots. `}          </p>
             <p className="text-lg md:text-xl xl:text-2xl">
                 <span className="bg-gradient-to-r from-red to-orange-500 inline-block text-transparent bg-clip-text font-semibold">
