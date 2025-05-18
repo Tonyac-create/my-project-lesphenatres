@@ -51,7 +51,7 @@ export default function SectionActivty() {
                 variant="secondary"
                 onClick={() => {
                     if (typeof window.plausible === 'function') {
-                        window.plausible('click_projets');
+                        window.plausible('click_ateliers');
                     }
                 }}
             >C'est quoi un atelier ?</Button>
