@@ -19,8 +19,19 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
   return (
     <>
       {navigation.map((item) => (
-        <li key={item.name} onClick={() => setIsMenuOpen(false)}>
-          <Link href={item.href} className={`tracking-wide hover:text-red ${pathname === item.href ? 'text-red' : 'text-black'}`}>{item.name}</Link>
+        <li key={item.name}>
+          <Link 
+            href={item.href} 
+            className={`tracking-wide hover:text-red ${pathname === item.href ? 'text-red' : 'text-black'}`}
+            onClick={() => {
+              setIsMenuOpen(false);
+              if (typeof window.plausible === 'function') {
+                window.plausible(`click_menu_${item.href.replace('/', '') || 'home'}`);
+              }
+            }}
+          >
+            {item.name}
+          </Link>
         </li>
       ))}
     </>
