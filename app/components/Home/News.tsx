@@ -17,13 +17,7 @@ export default function News() {
                     target="_blank"
                     onClick={() => {
                         if (typeof window.plausible === 'function') {
-                            window.plausible('Custom Event', {
-                                props: {
-                                    action: 'click_button',
-                                    target: 'facebook',
-                                    location: 'news_section'
-                                }
-                            });
+                            window.plausible('click_facebook');
                         }
                     }}
                     className="group inline-flex items-center gap-2 text-xl hover:text-red">
@@ -42,13 +36,7 @@ export default function News() {
                     className="group inline-flex items-center gap-2 text-xl hover:text-red"
                     onClick={() => {
                         if (typeof window.plausible === 'function') {
-                            window.plausible('Custom Event', {
-                                props: {
-                                    action: 'click_button',
-                                    target: 'tiktok',
-                                    location: 'news_section'
-                                }
-                            });
+                            window.plausible('click_tiktok');
                         }
                     }}
                 >
@@ -67,13 +55,7 @@ export default function News() {
                     className="group inline-flex items-center gap-2 text-xl hover:text-red"
                     onClick={() => {
                         if (typeof window.plausible === 'function') {
-                            window.plausible('Custom Event', {
-                                props: {
-                                    action: 'click_button',
-                                    target: 'instagram',
-                                    location: 'news_section'
-                                }
-                            });
+                            window.plausible('click_instagram');
                         }
                     }}
                 >
