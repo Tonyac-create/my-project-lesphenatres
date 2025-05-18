@@ -51,13 +51,7 @@ export default function SectionActivty() {
                 variant="secondary"
                 onClick={() => {
                     if (typeof window.plausible === 'function') {
-                        window.plausible('Custom Event', {
-                            props: {
-                                action: 'click_button',
-                                target: 'projets',
-                                location: 'activity_section'
-                            }
-                        });
+                        window.plausible('click_projets');
                     }
                 }}
             >C'est quoi un atelier ?</Button>
@@ -78,13 +72,7 @@ export default function SectionActivty() {
                 variant="secondary"
                 onClick={() => {
                     if (typeof window.plausible === 'function') {
-                        window.plausible('Custom Event', {
-                            props: {
-                                action: 'click_button',
-                                target: 'projets',
-                                location: 'activity_section'
-                            }
-                        });
+                        window.plausible('click_projets');
                     }
                 }}
             >Explorer les spectacles</Button>

@@ -43,13 +43,7 @@ export default function SectionProposition() {
                     variant="secondary"
                     onClick={() => {
                         if (typeof window.plausible === 'function') {
-                            window.plausible('Custom Event', {
-                                props: {
-                                    action: 'click_button',
-                                    target: 'contact',
-                                    location: 'proposition_section'
-                                }
-                            });
+                            window.plausible('click_contact');
                         }
                     }}
                 >{`Un spectacle m'intéresse !`}</Button>
