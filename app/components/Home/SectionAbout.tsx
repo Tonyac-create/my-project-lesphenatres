@@ -18,13 +18,7 @@ export default function SectionAbout() {
                         variant="secondary"
                         onClick={() => {
                             if (typeof window.plausible === 'function') {
-                                window.plausible('Custom Event', {
-                                    props: {
-                                        action: 'click_button',
-                                        target: 'history',
-                                        location: 'about_section'
-                                    }
-                                });
+                                window.plausible('click_history');
                             }
                         }}
                     >{`Toute l'histoire`}</Button>
