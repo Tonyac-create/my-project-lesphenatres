@@ -43,7 +43,7 @@ export default function SectionProposition() {
                     variant="secondary"
                     onClick={() => {
                         if (typeof window.plausible === 'function') {
-                            window.plausible('click_contact');
+                            window.plausible('click_contact_to_spectacle');
                         }
                     }}
                 >{`Un spectacle m'intéresse !`}</Button>
