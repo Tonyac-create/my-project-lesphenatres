@@ -21,7 +21,7 @@ export default function SectionAbout() {
                                 window.plausible('Custom Event', {
                                     props: {
                                         action: 'click_button',
-                                        target: 'philosophy',
+                                        target: 'history',
                                         location: 'about_section'
                                     }
                                 });
