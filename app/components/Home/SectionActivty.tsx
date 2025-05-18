@@ -72,7 +72,7 @@ export default function SectionActivty() {
                 variant="secondary"
                 onClick={() => {
                     if (typeof window.plausible === 'function') {
-                        window.plausible('click_projets');
+                        window.plausible('click_spectacles');
                     }
                 }}
             >Explorer les spectacles</Button>
