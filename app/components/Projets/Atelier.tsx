@@ -14,10 +14,24 @@ export default function Atelier({ title, age, description, photos }: AtelierProp
 
     const nextPhoto = () => {
         setCurrentPhotoIndex((prev) => (prev + 1) % photos.length);
+        if (typeof window.plausible === 'function') {
+            window.plausible('click_carousel_next', {
+                props: {
+                    atelier: title
+                }
+            });
+        }
     };
 
     const previousPhoto = () => {
         setCurrentPhotoIndex((prev) => (prev - 1 + photos.length) % photos.length);
+        if (typeof window.plausible === 'function') {
+            window.plausible('click_carousel_prev', {
+                props: {
+                    atelier: title
+                }
+            });
+        }
     };
 
     return (
