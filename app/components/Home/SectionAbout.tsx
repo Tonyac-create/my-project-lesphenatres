@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Button from "../Button";
 
@@ -11,18 +13,32 @@ export default function SectionAbout() {
                  du covid 19, elle a été créée par un groupe de personnes voulant juste faire du théâtre et en partageant cette passion 
                  au plus grand nombre, tout en restant contrairement à une expérience précédente.`}</p>
                     <p className="mt-3 mb-10 text-lg md:text-xl xl:text-2xl">{`Le nom de l'association “Les phénâtres de l'Artois” est un mélange des 2 mots...`}</p>
-                    <Button href="/philosophy" variant="secondary">{`Toute l'histoire`}</Button>
+                    <Button
+                        href="/philosophy"
+                        variant="secondary"
+                        onClick={() => {
+                            if (typeof window.plausible === 'function') {
+                                window.plausible('Custom Event', {
+                                    props: {
+                                        action: 'click_button',
+                                        target: 'philosophy',
+                                        location: 'about_section'
+                                    }
+                                });
+                            }
+                        }}
+                    >{`Toute l'histoire`}</Button>
                 </div>
-                 <div className="lg:w-1/2">
-                     <Image
-                         src="/fond_scene.webp"
-                         width={500}
-                         height={500}
-                         loading="lazy"
-                         alt="Scène avec projecteurs"
-                         className="w-full h-full object-cover mb-8 rounded-xl drop-shadow-[3px_5px_5px_rgba(0,0,0,0.5)]"
-                     />
-                 </div>
+                <div className="lg:w-1/2">
+                    <Image
+                        src="/fond_scene.webp"
+                        width={500}
+                        height={500}
+                        loading="lazy"
+                        alt="Scène avec projecteurs"
+                        className="w-full h-full object-cover mb-8 rounded-xl drop-shadow-[3px_5px_5px_rgba(0,0,0,0.5)]"
+                    />
+                </div>
             </article>
         </section>
     )

@@ -46,7 +46,21 @@ export default function SectionActivty() {
                     <p className="text-lg md:text-xl xl:text-2xl">{`Des travaux sur textes et de l'improvisation pour apprendre le théâtre en s’amusant !`}</p>
                 </div>
             </div>
-            <Button href="/projets" variant="secondary">C'est quoi un atelier ?</Button>
+            <Button
+                href="/projets"
+                variant="secondary"
+                onClick={() => {
+                    if (typeof window.plausible === 'function') {
+                        window.plausible('Custom Event', {
+                            props: {
+                                action: 'click_button',
+                                target: 'projets',
+                                location: 'activity_section'
+                            }
+                        });
+                    }
+                }}
+            >C'est quoi un atelier ?</Button>
             <SectionProposition />
             <h2 className="font-dancing text-red text-3xl sm:text-4xl xl:text-5xl mt-8 mb-5 font-semibold flex mr-auto">{`Des spectacles engagés !`}</h2>
             <div className="flex flex-col justify-center lg:flex-row gap-12 mb-10">
@@ -59,7 +73,21 @@ export default function SectionActivty() {
                     />
                 ))}
             </div>
-            <Button href="/projets" variant="secondary">Explorer les spectacles</Button>
+            <Button
+                href="/projets"
+                variant="secondary"
+                onClick={() => {
+                    if (typeof window.plausible === 'function') {
+                        window.plausible('Custom Event', {
+                            props: {
+                                action: 'click_button',
+                                target: 'projets',
+                                location: 'activity_section'
+                            }
+                        });
+                    }
+                }}
+            >Explorer les spectacles</Button>
         </section>
     )
 }

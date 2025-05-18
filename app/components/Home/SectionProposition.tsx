@@ -38,7 +38,21 @@ export default function SectionProposition() {
                 </div>
             </div>
             <div className="flex justify-center">
-                <Button href="/contact" variant="secondary">{`Un spectacle m'intéresse !`}</Button>
+                <Button
+                    href="/contact"
+                    variant="secondary"
+                    onClick={() => {
+                        if (typeof window.plausible === 'function') {
+                            window.plausible('Custom Event', {
+                                props: {
+                                    action: 'click_button',
+                                    target: 'contact',
+                                    location: 'proposition_section'
+                                }
+                            });
+                        }
+                    }}
+                >{`Un spectacle m'intéresse !`}</Button>
             </div>
         </section>
     )

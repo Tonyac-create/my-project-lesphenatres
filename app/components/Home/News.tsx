@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,7 +12,21 @@ export default function News() {
                 <p className="text-lg md:text-xl xl:text-2xl">{`Rejoignez-nous sur les réseaux pour ne rien manquer du spectacle !`}</p>
             </div>
             <div className="flex flex-col justify-center lg:flex-row gap-5 xl:gap-20 my-5">
-                <Link href="https://www.facebook.com/lesphenatres" target="_blank" className="group inline-flex items-center gap-2 text-xl hover:text-red">
+                <Link
+                    href="https://www.facebook.com/lesphenatres"
+                    target="_blank"
+                    onClick={() => {
+                        if (typeof window.plausible === 'function') {
+                            window.plausible('Custom Event', {
+                                props: {
+                                    action: 'click_button',
+                                    target: 'facebook',
+                                    location: 'news_section'
+                                }
+                            });
+                        }
+                    }}
+                    className="group inline-flex items-center gap-2 text-xl hover:text-red">
                     <Image
                         src="/icons/Mask_facebook.webp"
                         width={100}
@@ -20,7 +36,22 @@ export default function News() {
                     />
                     Nous suivre sur Facebook
                 </Link>
-                <Link href="https://www.tiktok.com/@lesphenatresdelartois?_t=ZN-8vLGTpttruQ&_r=1" target="_blank" className="group inline-flex items-center gap-2 text-xl hover:text-red">
+                <Link
+                    href="https://www.tiktok.com/@lesphenatresdelartois?_t=ZN-8vLGTpttruQ&_r=1"
+                    target="_blank"
+                    className="group inline-flex items-center gap-2 text-xl hover:text-red"
+                    onClick={() => {
+                        if (typeof window.plausible === 'function') {
+                            window.plausible('Custom Event', {
+                                props: {
+                                    action: 'click_button',
+                                    target: 'tiktok',
+                                    location: 'news_section'
+                                }
+                            });
+                        }
+                    }}
+                >
                     <Image
                         src="/icons/Mask_tiktok.webp"
                         width={100}
@@ -30,7 +61,22 @@ export default function News() {
                     />
                     Nous suivre sur TikTok
                 </Link>
-                <Link href="https://www.instagram.com/lesphenatresdelartois/?igsh=MXZwY21xeXZhOW80Ng%3D%3D#" target="_blank" className="group inline-flex items-center gap-2 text-xl hover:text-red">
+                <Link
+                    href="https://www.instagram.com/lesphenatresdelartois/?igsh=MXZwY21xeXZhOW80Ng%3D%3D#"
+                    target="_blank"
+                    className="group inline-flex items-center gap-2 text-xl hover:text-red"
+                    onClick={() => {
+                        if (typeof window.plausible === 'function') {
+                            window.plausible('Custom Event', {
+                                props: {
+                                    action: 'click_button',
+                                    target: 'instagram',
+                                    location: 'news_section'
+                                }
+                            });
+                        }
+                    }}
+                >
                     <Image
                         src="/icons/Mask_Instagram.webp"
                         width={100}
