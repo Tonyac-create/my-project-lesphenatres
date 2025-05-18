@@ -48,13 +48,7 @@ export default function HeroSection() {
                         variant="primary"
                         onClick={() => {
                             if (typeof window.plausible === 'function') {
-                                window.plausible('Custom Event', {
-                                    props: {
-                                        action: 'click_button',
-                                        target: 'philosophy',
-                                        location: 'hero_section'
-                                    }
-                                });
+                                window.plausible('click_philosophy');
                             }
                         }}
                     >
@@ -65,13 +59,7 @@ export default function HeroSection() {
                         variant="secondary"
                         onClick={() => {
                             if (typeof window.plausible === 'function') {
-                                window.plausible('Custom Event', {
-                                    props: {
-                                        action: 'click_button',
-                                        target: 'contact',
-                                        location: 'hero_section'
-                                    }
-                                });
+                                window.plausible('click_contact');
                             }
                         }}
                     >
