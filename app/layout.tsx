@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import BackToTopButton from "./components/BackToTopButton";
 
 export const metadata: Metadata = {
-  title: "Les Phénâtres de l'Artois",
+  title: "Les Phénâtres de l'Artois | Troupe de théâtre à Arras",
   description: "Découvrez la troupe de théâtre Les Phénâtres de l'Artois à Arras : improvisation et créations originales. Une passion pour la scène à partager.",
   metadataBase: new URL('https://lesphenatres.fr'),
   alternates: {
