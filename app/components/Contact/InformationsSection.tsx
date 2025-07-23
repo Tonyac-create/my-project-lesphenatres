@@ -60,7 +60,7 @@ export default function InformationsSection() {
                         <h3 className="text-xl font-semibold mb-2">Nous contacter</h3>
                         <p className="text-gray-700">
                             📧 lesphenatresdelartois6200@gmail.com<br />
-                            📞 06 68 37 70 32
+                            📞 07 59 67 01 46
                         </p>
                     </div>
 

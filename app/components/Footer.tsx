@@ -27,7 +27,7 @@ export default function Footer() {
                         {`Téléphone : `}
                     </p>
                     <p>
-                        {`06 68 37 70 32`}
+                        {`07 59 67 01 46`}
                     </p>
                 </div>
             </div>
@@ -61,7 +61,7 @@ export default function Footer() {
                             src="/icons/Mask_Instagram.webp"
                             width={50}
                             height={50}
-                            alt="Tiktok"
+                            alt="Instagram"
                             className="object-cover rounded-full mr-2"
                         />
                         Instagram
