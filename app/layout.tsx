@@ -7,7 +7,7 @@ import BackToTopButton from "./components/BackToTopButton";
 
 export const metadata: Metadata = {
   title: "Les Phénâtres de l'Artois | Troupe de théâtre à Arras",
-  description: "Découvrez la troupe de théâtre Les Phénâtres de l'Artois à Arras : improvisation et créations originales. Une passion pour la scène à partager.",
+  description: "Les Phénâtres de l’Artois, troupe de théâtre à Arras. Cours, ateliers pour enfants et adultes, improvisation et créations originales pour la passion de la scène",
   metadataBase: new URL('https://lesphenatres.fr'),
   alternates: {
     canonical: '/',
