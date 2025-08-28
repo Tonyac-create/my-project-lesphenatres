@@ -23,7 +23,6 @@ export default function InformationsSection() {
                             Atelier enfants à partir de 7 ans
                         </p>
                         <p className="text-gray-700">
-                            1 mercredi sur 2 de 17h30 à 19h00<br />
                             Le samedi de 10h00 à 11h30
                         </p>
                         <p className="font-semibold mt-6">
@@ -59,7 +58,7 @@ export default function InformationsSection() {
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Nous contacter</h3>
                         <p className="text-gray-700">
-                            📧 lesphenatresdelartois6200@gmail.com<br />
+                            📧 lesphenatresdelartois62000@gmail.com<br />
                             📞 07 59 67 01 46
                         </p>
                     </div>
