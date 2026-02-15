@@ -1,15 +1,15 @@
 export const team = [
     {
         src: "/membreCA/Kevin_president.webp",
-        alt: "Kevin Dupont",
+        alt: "Kevin",
         name: "Kevin Dupont",
         role: "Président",
         description: "Le grand manitou"
     },
     {
-        src: "/membreCA/Nicole_vicepresidente.webp",
-        alt: "Yvain Nicole",
-        name: "Yvain Nicole",    
+        src: "/membreCA/Julie_secretaireadjointe.webp",
+        alt: "Hugo Petithomme",
+        name: "Hugo Petithomme",    
         role: "Vice-président",
         description: "Le bras droit du grand manitou"
     },
