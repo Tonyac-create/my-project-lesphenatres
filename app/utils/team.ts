@@ -21,9 +21,9 @@ export const team = [
         description: "Il note tout, rien ne lui échappe"
     },
     {
-        src: "/membreCA/Hugo_secretaire.webp",
-        alt: "Julie",
-        name: "Julie Salembier",    
+        src: "",
+        alt: "Emilie",
+        name: "Emilie Duhamelle",    
         role: "Secrétaire adjointe",
         description: "Son backup, toujours prête"
     },
