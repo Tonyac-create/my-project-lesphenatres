@@ -11,6 +11,12 @@ export const spectacles = [
         imageRideau: '/Rideau_theatre.webp',
         image2: '/Spectacle_2.webp',
     },
+    {
+        id: 3,
+        description: "Une souris et un ours se lancent dans une aventure pleine de courage et d’amitié pour sauver l’étoile du Père Noël qui s’éteint et préserver la magie de Noël.",
+        imageRideau: '/Rideau_theatre.webp',
+        image2: '/spectacles/Opération_sauvetage_Noël.webp',
+    },
 ]
 
 export const spectaclesComplete = [
@@ -29,5 +35,13 @@ export const spectaclesComplete = [
         description3: "Ps : Je m’appelle sacha, et j’espère que vous comprendrez les choses sous les apparences.",
         image2: ['/Spectacle_2.webp'],
         title: "L'enfer du décor"
+    },
+    {
+        id: 3,
+        description: "C’est l’histoire d’une souris et d’un ours qui observent l’étoile du Père Noël faiblir dans le ciel. Ils en déduisent qu’il est en danger et que la fête de Noël court un immense péril. Ils s’engagent alors dans un périple qui mettra à l’épreuve leur courage, leur audace, mais surtout leur amitié.",
+        description2: "Réussiront-ils à sauver cette fête ? Venez le découvrir, seul ou en famille.",
+        description3: "",
+        image2: ['/spectacles/Opération_sauvetage_Noël.webp'],
+        title: "Opération sauvetage au pays du Père Noël"
     },
 ]
