@@ -21,7 +21,7 @@ export const team = [
         description: "Il note tout, rien ne lui échappe"
     },
     {
-        src: "",
+        src: "/membreCA/Emilie_secretaire.png",
         alt: "Emilie",
         name: "Emilie Duhamelle",    
         role: "Secrétaire adjointe",
