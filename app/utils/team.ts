@@ -14,16 +14,16 @@ export const team = [
         description: "Le bras droit du grand manitou"
     },
     {
-        src: "/membreCA/Julie_secretaireadjointe.webp",
-        alt: "Hugo",
-        name: "Hugo Petithomme",    
+        src: "/membreCA/Emilie_secretaire.png",
+        alt: "Emilie",
+        name: "Emilie Duhamelle",    
         role: "Secrétaire",
         description: "Il note tout, rien ne lui échappe"
     },
     {
-        src: "/membreCA/Emilie_secretaire.png",
-        alt: "Emilie",
-        name: "Emilie Duhamelle",    
+        src: "/Person.png",
+        alt: "Julie",
+        name: "Julie Salembier",    
         role: "Secrétaire adjointe",
         description: "Son backup, toujours prête"
     },
@@ -35,10 +35,17 @@ export const team = [
         description: "Les sous, c'est son affaire"
     },
     {
-        src: "/membreCA/Jordan_MembreCa.webp",
-        alt: "Jordan",
-        name: "Jordan Fondase",    
+        src: "/Person.png",
+        alt: "Fanny",
+        name: "Fanny Choquet",    
         role: "Membre CA",
-        description: "En devenir, futur Alain Delon..."
+        description: "En devenir, futur Catherine Deneuve..."
+    },
+    {
+        src: "/Person.png",
+        alt: "Angélique",
+        name: "Angélique Vitaux",    
+        role: "Membre CA",
+        description: "Toujours prête à entrer en scène !"
     },
 ]

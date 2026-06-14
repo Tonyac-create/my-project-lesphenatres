@@ -70,7 +70,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-4">
                 <Link href="/mentions" className="hover:text-red">Mentions légales</Link>
-                <p className="font-semibold">&copy;{`2025 Les Phénâtres de l'Artois. Tous droits reservés.`}</p>
+                <p className="font-semibold">&copy;{`2025-2026 Les Phénâtres de l'Artois. Tous droits reservés.`}</p>
             </div>
         </footer>
     )
