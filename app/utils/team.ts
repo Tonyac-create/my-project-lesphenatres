@@ -21,7 +21,7 @@ export const team = [
         description: "Il note tout, rien ne lui échappe"
     },
     {
-        src: "/Person.png",
+        src: "/membreCA/julie_salembier.jpg",
         alt: "Julie",
         name: "Julie Salembier",    
         role: "Secrétaire adjointe",
@@ -42,10 +42,10 @@ export const team = [
         description: "En devenir, futur Catherine Deneuve..."
     },
     {
-        src: "/Person.png",
+        src: "/membreCA/Angelique.jpg",
         alt: "Angélique",
         name: "Angélique Vitaux",    
         role: "Membre CA",
-        description: "Toujours prête à entrer en scène !"
+        description: "Toujours prête à entrer en scène!"
     },
 ]
