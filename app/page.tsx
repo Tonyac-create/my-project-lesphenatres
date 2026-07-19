@@ -1,4 +1,5 @@
 import HeroSection from "./components/Home/HeroSection";
+import NewInformation from "./components/Home/NewInformation";
 import News from "./components/Home/News";
 import SectionAbout from "./components/Home/SectionAbout";
 import SectionActivty from "./components/Home/SectionActivty";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <NewInformation />
       <SectionAbout />
       <News />
       <SectionActivty />
